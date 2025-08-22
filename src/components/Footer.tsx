@@ -1,11 +1,17 @@
 import { Button } from "@/components/ui/button";
+
 const Footer = () => {
-  return <footer className="bg-primary text-white py-16">
+  return (
+    <footer className="bg-primary text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <img src="/lovable-uploads/ea4a0ce6-6008-4039-a58d-8eb782c9a48d.png" alt="Portal da ESI Logo" className="h-10 w-auto" />
+              <img 
+                src="/lovable-uploads/ea4a0ce6-6008-4039-a58d-8eb782c9a48d.png" 
+                alt="Portal da ESI Logo" 
+                className="h-10 w-auto"
+              />
               <span className="text-xl font-bold">Portal da ESI</span>
             </div>
             <p className="text-gray-300">
@@ -36,9 +42,11 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-gray-300">
-          <p>Copyright © 2025 Portal de BSI</p>
+          <p>Copyright © 2024 Portal da ESI</p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
