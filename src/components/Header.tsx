@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
@@ -14,18 +15,22 @@ const Header = () => {
             />
           </div>
           
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             <a href="#home" className="hover:text-gray-200 transition-colors">Home</a>
             <a href="#blog" className="hover:text-gray-200 transition-colors">Blog</a>
             <a href="#projetos" className="hover:text-gray-200 transition-colors">Projetos</a>
             <a href="#eventos" className="hover:text-gray-200 transition-colors">Eventos</a>
             <a href="#equipe" className="hover:text-gray-200 transition-colors">Equipe</a>
             <a href="#contato" className="hover:text-gray-200 transition-colors">Contato</a>
+            <ThemeToggle />
           </nav>
           
-          <Button variant="ghost" className="md:hidden text-white">
-            <Menu className="w-6 h-6" />
-          </Button>
+          <div className="flex items-center space-x-4 md:hidden">
+            <ThemeToggle />
+            <Button variant="ghost" className="text-white">
+              <Menu className="w-6 h-6" />
+            </Button>
+          </div>
         </div>
       </div>
     </header>
