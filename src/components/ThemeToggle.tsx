@@ -20,7 +20,7 @@ const ThemeToggle = () => {
       variant="ghost"
       size="sm"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="text-white hover:bg-white/20"
+      className="text-white hover:bg-sky-200"
     >
       {theme === "light" ? (
         <Moon className="h-4 w-4" />

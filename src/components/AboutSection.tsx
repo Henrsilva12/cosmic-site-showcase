@@ -13,8 +13,8 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <Card className="bg-section-gradient rounded-[20px] overflow-hidden shadow-2xl">
           <CardContent className="p-8">
-            <div className="mb-8">
-              <p className="text-lg leading-relaxed text-justify max-w-4xl mx-auto text-slate-100">
+            <div className="mb-10">
+              <p className="text-lg leading-relaxed text-justify max-w-full text-slate-100">
                 Este blog tem como proposta registrar e divulgar tudo o que acontece no curso de Bacharelado 
                 em Sistemas de Informação (BSI) do IF Baiano – Campus Itapetinga. Aqui você encontra conteúdos 
                 sobre projetos, eventos, oficinas, participações externas e outras ações que fazem parte da 

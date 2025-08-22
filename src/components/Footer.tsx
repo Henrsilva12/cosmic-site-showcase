@@ -25,17 +25,17 @@ const Footer = () => {
           
           <div>
             <div className="space-y-4">
-              <Button className="w-full bg-white text-primary hover:bg-gray-100">
+              <Button className="w-full bg-white text-primary hover:bg-sky-200">
                 Enviar mensagem
               </Button>
-              <Button variant="outline" className="w-full text-white border-white hover:bg-white hover:text-primary">
+              <Button variant="outline" className="w-full text-primary border-white hover:bg-sky-200 hover:text-primary">
                 Relatar problemas
               </Button>
             </div>
           </div>
         </div>
         
-        <div className="border-t border-white/20 mt-12 pt-8 text-center text-gray-300">
+        <div className="mt-12 pt-8 text-center text-gray-300">
           <p>Copyright © 2025 Portal de BSI</p>
         </div>
       </div>

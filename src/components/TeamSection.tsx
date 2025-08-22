@@ -13,7 +13,7 @@ const TeamSection = () => {
                 <img src={teamPhoto} alt="Equipe Portal da ESI" className="w-full h-full object-cover" />
               </div>
               <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-3xl font-bold mb-6 font-heading">Por trás de cada postagem, entrevista e destaque do curso de Sistemas de Informação está uma equipe apaixonada por tecnologia, design e comunicação.</h3>
+                <h3 className="text-3xl font-bold mb-6">Por trás de cada postagem, entrevista e destaque do curso de Sistemas de Informação está uma equipe apaixonada por tecnologia, design e comunicação.</h3>
                 <p className="text-gray-200 mb-6 leading-relaxed text-justify">Nosso objetivo é traduzir o dia a dia do curso em conteúdos envolventes, informativos e acessíveis — mostrando como o BSI transforma ideias em projetos e conhecimento em impacto.</p>
                 <a href="/equipe" className="inline-flex items-center font-medium hover:underline transition-all duration-300 self-start" style={{
                 color: '#F6BE9A'
