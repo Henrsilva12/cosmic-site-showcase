@@ -23,9 +23,7 @@ const AboutSection = () => {
               </div>
             </div>
             <CardContent className="p-6">
-              <p className="text-muted-foreground mb-4 text-justify">
-                Comunidade tecnológica do campus focada em desenvolvimento de habilidades e networking profissional.
-              </p>
+              
               <Button variant="outline" className="w-full" onClick={() => window.open('#', '_blank')}>
                 <Globe className="w-4 h-4 mr-2" />
                 Acessar site
@@ -42,9 +40,7 @@ const AboutSection = () => {
               </div>
             </div>
             <CardContent className="p-6">
-              <p className="text-muted-foreground mb-4 text-justify">
-                Representação estudantil que promove eventos, palestras e atividades acadêmicas para o curso.
-              </p>
+              
               <Button variant="outline" className="w-full" onClick={() => window.open('#', '_blank')}>
                 <Users className="w-4 h-4 mr-2" />
                 Acessar site
@@ -61,9 +57,7 @@ const AboutSection = () => {
               </div>
             </div>
             <CardContent className="p-6">
-              <p className="text-muted-foreground mb-4 text-justify">
-                Plataforma de comunicação estudantil que divulga notícias, eventos e conteúdo educativo.
-              </p>
+              
               <Button variant="outline" className="w-full" onClick={() => window.open('#', '_blank')}>
                 <Radio className="w-4 h-4 mr-2" />
                 Acessar site
