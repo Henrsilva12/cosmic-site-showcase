@@ -7,10 +7,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-              <span className="text-primary font-bold text-xl">ESI</span>
-            </div>
-            <span className="text-xl font-bold">Portal da ESI</span>
+            <img 
+              src="/lovable-uploads/ea4a0ce6-6008-4039-a58d-8eb782c9a48d.png" 
+              alt="Portal da ESI Logo" 
+              className="h-12 w-auto"
+            />
           </div>
           
           <nav className="hidden md:flex space-x-8">
