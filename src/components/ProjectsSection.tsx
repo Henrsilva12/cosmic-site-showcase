@@ -1,34 +1,60 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import projectsBg from "@/assets/projects-bg.jpg";
+import { ArrowRight } from "lucide-react";
+import projectMedium from "@/assets/project-medium.jpg";
+import projectSmall1 from "@/assets/project-small-1.jpg";
+import projectSmall2 from "@/assets/project-small-2.jpg";
 
 const ProjectsSection = () => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Projetos</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-foreground font-heading">Projetos</h2>
         
-        <Card className="bg-section-gradient text-white rounded-2xl overflow-hidden">
-          <CardContent className="p-0">
-            <div className="grid md:grid-cols-2 gap-0">
-              <div className="p-8">
-                <h3 className="text-2xl font-bold mb-4">Explore nossos projetos</h3>
-                <p className="text-gray-200 mb-6 leading-relaxed">
+        <Card className="bg-section-gradient text-white rounded-[20px] overflow-hidden shadow-2xl">
+          <CardContent className="p-8">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-6 font-heading">Explore nossos projetos</h3>
+                <p className="text-gray-200 mb-6 leading-relaxed text-justify">
                   Neste espaço, você encontra os projetos desenvolvidos e apresentados pelos estudantes e professores do curso de 
                   Sistema de informação. Cada projeto reflete aprendizado e desenvolvimento tecnológico, desde aplicações web, 
                   sistemas de gerenciamento, soluções inovadoras e muito mais. Nossos projetos são uma janela para o conhecimento 
                   prático e teórico que estamos construindo.
                 </p>
-                <Button variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
-                  Saiba mais →
-                </Button>
+                <a 
+                  href="/projetos"
+                  className="inline-flex items-center font-medium hover:underline transition-all duration-300"
+                  style={{ color: '#F6BE9A' }}
+                >
+                  Saiba mais
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
               </div>
-              <div className="relative">
-                <img 
-                  src={projectsBg} 
-                  alt="Projetos de desenvolvimento" 
-                  className="w-full h-full object-cover"
-                />
+              
+              <div className="grid grid-cols-2 gap-4">
+                <div className="col-span-2">
+                  <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img 
+                      src={projectMedium} 
+                      alt="Projeto principal de desenvolvimento" 
+                      className="w-full h-48 object-cover"
+                    />
+                  </Card>
+                </div>
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <img 
+                    src={projectSmall1} 
+                    alt="Projeto de aplicativo móvel" 
+                    className="w-full h-32 object-cover"
+                  />
+                </Card>
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <img 
+                    src={projectSmall2} 
+                    alt="Projeto de desenvolvimento web" 
+                    className="w-full h-32 object-cover"
+                  />
+                </Card>
               </div>
             </div>
           </CardContent>

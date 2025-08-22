@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   return (
@@ -8,9 +7,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold text-xl">ESI</span>
-              </div>
+              <img 
+                src="/lovable-uploads/ea4a0ce6-6008-4039-a58d-8eb782c9a48d.png" 
+                alt="Portal da ESI Logo" 
+                className="h-10 w-auto"
+              />
               <span className="text-xl font-bold">Portal da ESI</span>
             </div>
             <p className="text-gray-300">

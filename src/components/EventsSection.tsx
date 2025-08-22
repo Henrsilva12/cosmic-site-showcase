@@ -1,36 +1,58 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import event1 from "@/assets/event-1.jpg";
+import event2 from "@/assets/event-2.jpg";
+import event3 from "@/assets/event-3.jpg";
 
 const EventsSection = () => {
   return (
-    <section className="py-16 bg-section-gradient text-white">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Eventos</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-foreground font-heading">Eventos</h2>
         
-        <Card className="bg-white/10 backdrop-blur-sm border-white/20 rounded-2xl">
+        <Card className="bg-section-gradient text-white rounded-2xl overflow-hidden shadow-2xl">
           <CardContent className="p-8">
-            <h3 className="text-2xl font-bold mb-4">Explore nossos eventos</h3>
-            <p className="text-gray-200 mb-8 leading-relaxed">
-              Neste espaço, você encontra os projetos desenvolvidos e apresentados pelos estudantes e professores do curso de 
-              Sistema de Informação. Cada projeto reflete aprendizado e desenvolvimento tecnológico, desde aplicações web, 
-              sistemas de gerenciamento, soluções inovadoras e muito mais. Nossos projetos são uma janela para o conhecimento 
-              prático e teórico que estamos construindo.
-            </p>
-            
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="aspect-video bg-white/20 rounded-lg"></div>
-              <div className="aspect-video bg-white/20 rounded-lg"></div>
-              <div className="aspect-video bg-white/20 rounded-lg"></div>
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-6 font-heading">Participe dos nossos eventos</h3>
+                <p className="text-gray-200 mb-6 leading-relaxed text-justify">
+                  Aqui você encontra informações sobre workshops, palestras, hackathons e outras atividades que promovemos. 
+                  Nossos eventos são oportunidades únicas de networking, aprendizado e desenvolvimento profissional na área de tecnologia.
+                </p>
+                <a 
+                  href="/eventos"
+                  className="inline-flex items-center font-medium hover:underline transition-all duration-300"
+                  style={{ color: '#F6BE9A' }}
+                >
+                  Saiba mais
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
+              </div>
+              
+              <div className="grid grid-cols-1 gap-4">
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <img 
+                    src={event1} 
+                    alt="Conferência de Tecnologia" 
+                    className="w-full h-32 object-cover"
+                  />
+                </Card>
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <img 
+                    src={event2} 
+                    alt="Workshop de Desenvolvimento" 
+                    className="w-full h-32 object-cover"
+                  />
+                </Card>
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <img 
+                    src={event3} 
+                    alt="Hackathon Universitário" 
+                    className="w-full h-32 object-cover"
+                  />
+                </Card>
+              </div>
             </div>
-            
-            <p className="text-gray-200 mb-6 leading-relaxed">
-              Neste espaço, você encontra os projetos desenvolvidos e apresentados pelos estudantes e professores do curso de 
-              Sistema de informação. Cada projeto reflete aprendizado e desenvolvimento tecnológico, desde aplicações web, sistemas de gerenciamento, soluções inovadoras e muito mais. Nossos projetos são uma janela para o conhecimento prático e teórico que estamos construindo.
-            </p>
-            
-            <Button variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
-              Saiba mais →
-            </Button>
           </CardContent>
         </Card>
       </div>
