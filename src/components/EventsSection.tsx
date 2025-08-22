@@ -3,10 +3,8 @@ import { ArrowRight } from "lucide-react";
 import event1 from "@/assets/event-1.jpg";
 import event2 from "@/assets/event-2.jpg";
 import event3 from "@/assets/event-3.jpg";
-
 const EventsSection = () => {
-  return (
-    <section className="py-16 bg-background">
+  return <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-foreground font-heading">Eventos</h2>
         
@@ -14,16 +12,11 @@ const EventsSection = () => {
           <CardContent className="p-8">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-3xl font-bold mb-6 font-heading">Participe dos nossos eventos</h3>
-                <p className="text-gray-200 mb-6 leading-relaxed text-justify">
-                  Aqui você encontra informações sobre workshops, palestras, hackathons e outras atividades que promovemos. 
-                  Nossos eventos são oportunidades únicas de networking, aprendizado e desenvolvimento profissional na área de tecnologia.
-                </p>
-                <a 
-                  href="/eventos"
-                  className="inline-flex items-center font-medium hover:underline transition-all duration-300"
-                  style={{ color: '#F6BE9A' }}
-                >
+                <h3 className="font-bold mb-6 font-heading text-3xl">Participe dos nossos eventos</h3>
+                <p className="text-gray-200 mb-6 leading-relaxed text-justify">Nesta seção, você encontrará os projetos desenvolvidos e acompanhados pelos estudantes e professores do curso de Bacharelado em Sistemas de Informação (BSI). Cada iniciativa reflete o compromisso com a prática, a inovação e o impacto social, envolvendo temas como tecnologia, educação, sustentabilidade, robótica, redes e desenvolvimento de software. </p>
+                <a href="/eventos" className="inline-flex items-center font-medium hover:underline transition-all duration-300" style={{
+                color: '#F6BE9A'
+              }}>
                   Saiba mais
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
@@ -31,33 +24,19 @@ const EventsSection = () => {
               
               <div className="grid grid-cols-1 gap-4">
                 <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <img 
-                    src={event1} 
-                    alt="Conferência de Tecnologia" 
-                    className="w-full h-32 object-cover"
-                  />
+                  <img src={event1} alt="Conferência de Tecnologia" className="w-full h-32 object-cover" />
                 </Card>
                 <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <img 
-                    src={event2} 
-                    alt="Workshop de Desenvolvimento" 
-                    className="w-full h-32 object-cover"
-                  />
+                  <img src={event2} alt="Workshop de Desenvolvimento" className="w-full h-32 object-cover" />
                 </Card>
                 <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <img 
-                    src={event3} 
-                    alt="Hackathon Universitário" 
-                    className="w-full h-32 object-cover"
-                  />
+                  <img src={event3} alt="Hackathon Universitário" className="w-full h-32 object-cover" />
                 </Card>
               </div>
             </div>
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default EventsSection;
