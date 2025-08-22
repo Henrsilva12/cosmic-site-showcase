@@ -33,10 +33,14 @@ const AboutSection = () => {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <Button variant="outline" className="w-full" onClick={() => window.open('#', '_blank')}>
+                  <Button 
+                    variant="outline" 
+                    className="w-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+                    onClick={() => window.open('https://www.ifbaiano.edu.br/unidades/itapetinga', '_blank')}
+                  >
                     <Globe className="w-4 h-4 mr-2" />
                     Acessar site
-                  </Button>
+                </Button>
                 </CardContent>
               </Card>
 
@@ -49,7 +53,7 @@ const AboutSection = () => {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <Button variant="outline" className="w-full" onClick={() => window.open('#', '_blank')}>
+                  <Button variant="outline" className="w-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300" onClick={() => window.open('https://www.instagram.com/cabsi.if', '_blank')}>
                     <Users className="w-4 h-4 mr-2" />
                     Acessar site
                   </Button>
@@ -65,7 +69,7 @@ const AboutSection = () => {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <Button variant="outline" className="w-full" onClick={() => window.open('#', '_blank')}>
+                  <Button variant="outline" className="w-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300" onClick={() => window.open('https://www.youtube.com/@RadioDigaMais', '_blank')}>
                     <Radio className="w-4 h-4 mr-2" />
                     Acessar site
                   </Button>
