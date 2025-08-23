@@ -14,7 +14,7 @@ const ProjectsSection = () => {
               <div>
                 <h3 className="text-3xl font-bold mb-6">Explore nossos projetos</h3>
                 <p className="text-gray-200 mb-6 leading-relaxed text-justify">Nesta seção, você encontrará os projetos desenvolvidos e acompanhados pelos estudantes e professores do curso de Bacharelado em Sistemas de Informação (BSI). Cada iniciativa reflete o compromisso com a prática, a inovação e o impacto social, envolvendo temas como tecnologia, educação, sustentabilidade, robótica, redes e desenvolvimento de software.</p>
-                <a href="/projetos" className="inline-flex items-center font-medium hover:underline transition-all duration-300" style={{
+                <a href="/projects" className="inline-flex items-center font-medium hover:underline transition-all duration-300" style={{
                 color: '#F6BE9A'
               }}>
                   Saiba mais
