@@ -24,36 +24,30 @@ const ProjectGameOn = () => {
             
             <h1 className="text-4xl font-bold text-foreground mb-6">Game On</h1>
           </div>
-
  
+
+          <div className="prose max-w-none mb-8">
+            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+              O projeto Game On: Aprendendo a Programar levou a tecnologia diretamente para as salas de aula em Itapetinga, unindo ensino e diversão por meio da criação de jogos. A proposta foi simples, mas poderosa: despertar o interesse de jovens pela programação, usando o desenvolvimento de games como porta de entrada.
+            </p>
+
           <img 
-            src="/path/to/game-on-image.jpg" 
+            src="/src/assets/gameon1.png" 
             alt="Game On"
             className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
           />
 
-          <div className="prose max-w-none mb-8">
-            <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-              O projeto Game On: Aprendendo a Programar levou a tecnologia diretamente para as salas de aula em Itapetinga, unindo ensino e diversão por meio da criação de jogos. A proposta foi simples, mas poderosa: despertar o interesse de jovens pela programação, usando o desenvolvimento de games como porta de entrada.
+            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+              A equipe visitou escolas da cidade, realizando oficinas práticas com foco em raciocínio lógico, resolução de problemas e criatividade. Além disso, os participantes tiveram contato direto com Python, uma das linguagens mais populares do mundo, ideal para iniciantes e essencial no mercado de trabalho atual.
             </p>
-
+            
             <img 
-            src="/path/to/loop-infinito-image.jpg" 
+            src="/src/assets/gameon2.png" 
             alt="Loop Infinito"
             className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
           />
             
-            <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-              A equipe visitou escolas da cidade, realizando oficinas práticas com foco em raciocínio lógico, resolução de problemas e criatividade. Além disso, os participantes tiveram contato direto com Python, uma das linguagens mais populares do mundo, ideal para iniciantes e essencial no mercado de trabalho atual.
-            </p>
-
-            <img 
-            src="/path/to/game-on-image.jpg" 
-            alt="Game On"
-            className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-          />
-            
-            <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+            <p className="text-lg leading-relaxed text-slate-950 mb-6">
               As fotos tiradas por Arthur, Bruno e Emanuel mostram o engajamento dos alunos e o impacto positivo da iniciativa. Ao final, o projeto deixou um legado: uma nova geração de estudantes mais conectada com a tecnologia e com o potencial de transformar ideias em soluções reais.
             </p>
           </div>

@@ -27,40 +27,27 @@ const ProjectRobotica = () => {
           </div>
 
  
-          <img 
-            src="/path/to/robotica-image.jpg" 
-            alt="Projeto Robótica"
-            className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-          />
 
           <div className="prose max-w-none mb-8">
-            <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+            <p className="text-lg leading-relaxed text-slate-950 mb-6">
               A robótica entrou em cena de forma lúdica e educativa no projeto Introdução à Robótica e Automação com Arduino, realizado na Escola Noralice e posteriormente demonstrado na exposição 2023. A ação foi voltada para crianças, que puderam interagir com kits de Arduino e entender, na prática, como a automação está presente no nosso dia a dia.
             </p>
 
             <img 
-            src="/path/to/robotica-image.jpg" 
+            src="/src/assets/robotica1.png" 
             alt="Projeto Robótica"
             className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
           />
             
-            <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+            <p className="text-lg leading-relaxed text-slate-950 mb-6">
               Embora nossa equipe tenha ficado mais na observação — assistindo os pequenos explorarem os circuitos com empolgação — o momento foi essencial para perceber como a tecnologia pode ser inserida desde cedo no ambiente escolar de maneira leve e divertida.
             </p>
 
-            <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+            <p className="text-lg leading-relaxed text-slate-950 mb-6">
               As fotos desse dia mostram o brilho nos olhos das crianças ao se depararem com os sensores, LEDs e motores, provando que, com a abordagem certa, aprender pode ser tão empolgante quanto brincar.
             </p>
-
-            <img 
-            src="/path/to/robotica-image.jpg" 
-            alt="Robótica na Prática"
-            className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-          />
-            
           </div>
 
-          {/* Seção de Contatos */}
           <div className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Contatos</h2>
             <div className="space-y-3">
