@@ -43,6 +43,13 @@ const ProjectRecicla = () => {
             <p className="text-lg leading-relaxed text-slate-950 mb-6">
               A proposta é unir tecnologia e responsabilidade ambiental, promovendo mudanças reais através de ações simples e eficazes.
             </p>
+
+            <img 
+            src="/src/assets/recicla.png" 
+            alt="Loop Infinito"
+            className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
+          />
+            
           </div>
 
           {/* Seção de Contatos */}
@@ -50,13 +57,9 @@ const ProjectRecicla = () => {
             <h2 className="text-2xl font-bold mb-4">Contatos</h2>
             <div className="space-y-3">
               <div className="flex items-center">
-                <Mail className="w-5 h-5 mr-3 text-muted-foreground" />
-                <span className="text-muted-foreground">Lorem ipsum@gmail.com</span>
-              </div>
-              <div className="flex items-center">
                 <Github className="w-5 h-5 mr-3 text-muted-foreground" />
                 <a 
-                  href="https://github.com/loop-infinito" 
+                  href="https://github.com/BSI-IFBaiano" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary hover:underline"

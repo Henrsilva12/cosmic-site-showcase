@@ -57,10 +57,6 @@ const ProjectGameOn = () => {
             <h2 className="text-2xl font-bold mb-4">Contatos</h2>
             <div className="space-y-3">
               <div className="flex items-center">
-                <Mail className="w-5 h-5 mr-3 text-muted-foreground" />
-                <span className="text-muted-foreground">Lorem ipsum@gmail.com</span>
-              </div>
-              <div className="flex items-center">
                 <Github className="w-5 h-5 mr-3 text-muted-foreground" />
                 <a 
                   href="https://github.com/loop-infinito" 
