@@ -7,6 +7,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Projects from "./pages/Projects";
+import ProjectLoop from "./pages/ProjectLoop";
+import ProjectGameOn from "./pages/ProjectGameOn";
+import ProjectRobotica from "./pages/ProjectRobotica";
+import ProjectRecicla from "./pages/ProjectRecicla";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +24,10 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/project-loop" element={<ProjectLoop />} />
+            <Route path="/project-game-on" element={<ProjectGameOn />} />
+            <Route path="/project-robotica" element={<ProjectRobotica />} />
+            <Route path="/project-recicla" element={<ProjectRecicla />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

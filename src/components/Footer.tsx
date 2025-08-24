@@ -6,7 +6,6 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <img src="/lovable-uploads/ea4a0ce6-6008-4039-a58d-8eb782c9a48d.png" alt="Portal da ESI Logo" className="h-10 w-auto" />
-              <span className="text-xl font-bold">Portal da ESI</span>
             </div>
             <p className="text-gray-300">
               Compartilhando conhecimento e construindo o futuro da tecnologia.

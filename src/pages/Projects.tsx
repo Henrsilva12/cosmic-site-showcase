@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import Footer from "@/components/Footer";
 
 const Projects = () => {
   const projects = [
@@ -9,29 +11,30 @@ const Projects = () => {
       id: 1,
       title: "Loop Infinito",
       description: "Um grupo de estudos para alunos de Sistemas de Informação do IF Baiano, focado em reforçar lógica de programação e algoritmos através de aulas práticas, desafios e projetos. Ideal para quem quer superar dificuldades e evoluir na carreira tech!",
-      image: "/path/to/image1.jpg",
-      link: "#"
+      image: "/src/assets/loop1.jpg",
+      link: "/project-loop",
+      slug: "loop-infinito"
     },
     {
       id: 2,
       title: "Mãos que Reciclam",
       description: "O campus Itapetinga avança na coleta seletiva com um novo app para facilitar o descarte correto. Tecnologia e consciência ambiental caminhando juntas!",
-      image: "/path/to/image2.jpg",
-      link: "#"
+      image: "/src/assets/recicla1.png",
+      link: "/project-recicla"
     },
     {
       id: 3, 
       title: "Game On",
       description: "Alunos de BSI incentivaram Jovens de Itapetinga a descobrirem o mundo da programação criando seus próprios jogos! Com Python e muita criatividade, a tecnologia virou diversão nas salas de aula.",
-      image: "/path/to/image3.jpg",
-      link: "#"
+      image: "/src/assets/gameon1.png",
+      link: "/project-game-on",
     },
     {
       id: 4, 
       title: "Robótica na Prática",
       description: "Crianças da Escola Noralice descobriram o mundo da automação com Arduino em um projeto cheio de LEDs, sensores e muita diversão. Aprender tecnologia nunca foi tão empolgante!",
-      image: "/path/to/image4.jpg",
-      link: "#"
+      image: "/src/assets/robotica1.png",
+      link: "/project-robotica",
     }
   ];
 
@@ -62,16 +65,20 @@ const Projects = () => {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-3 text-foreground line-clamp-1">{project.title}</h3>
                   <p className="text-muted-foreground mb-6 line-clamp-3 leading-relaxed">{project.description}</p>
-                  <Button className="w-full group">
-                    Ver Detalhes
-                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                  </Button>
+                  
+                  <Link to={project.link} className="block w-full">
+                    <Button className="w-full group">
+                      Ver Detalhes
+                      <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
