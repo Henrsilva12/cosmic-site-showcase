@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,15 +11,15 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <img 
               src="/lovable-uploads/ea4a0ce6-6008-4039-a58d-8eb782c9a48d.png" 
-              alt="Portal da ESI Logo" 
+              alt="Portal da BSI" 
               className="h-12 w-auto"
             />
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="hover:text-sky-400 transition-colors">Home</a>
+            <Link to="/" className="hover:text-sky-400 transition-colors">Home</Link>
             <a href="#blog" className="hover:text-sky-400 transition-colors">Blog</a>
-            <a href="#projetos" className="hover:text-sky-400 transition-colors">Projetos</a>
+            <Link to="/projects" className="hover:text-sky-400 transition-colors">Projetos</Link>
             <a href="#eventos" className="hover:text-sky-400 transition-colors">Eventos</a>
             <a href="#equipe" className="hover:text-sky-400 transition-colors">Equipe</a>
             <a href="#contato" className="hover:text-sky-400 transition-colors">Contato</a>
