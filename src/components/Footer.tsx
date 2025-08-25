@@ -13,9 +13,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Contato</h3>
-            <p className="text-gray-300 mb-2">Email: portal@esi.edu.br</p>
-            <h4 className="text-lg font-semibold mb-2 mt-6">Legal</h4>
+            <h3 className="text-lg font-semibold mb-5 mt-1">Legal</h3>
             <ul className="space-y-2 text-gray-300">
               <li>Política de Privacidade</li>
               <li>Termos e condições</li>
