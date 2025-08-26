@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-primary-gradient text-white shadow-lg">
+    <header className="bg-primary-gradient text-white shadow-lg fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -22,7 +22,6 @@ const Header = () => {
             <Link to="/projects" className="hover:text-sky-400 transition-colors">Projetos</Link>
             <a href="#eventos" className="hover:text-sky-400 transition-colors">Eventos</a>
             <a href="#equipe" className="hover:text-sky-400 transition-colors">Equipe</a>
-            <a href="#contato" className="hover:text-sky-400 transition-colors">Contato</a>
             <ThemeToggle />
           </nav>
           

@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { Calendar, User, Github, Mail } from "lucide-react";
+import { Calendar, User, Github } from "lucide-react";
 
 const ProjectRecicla = () => {
   return (
@@ -45,8 +45,8 @@ const ProjectRecicla = () => {
             </p>
 
             <img 
-            src="/src/assets/recicla.png" 
-            alt="Loop Infinito"
+            src="/src/assets/reciclaa.png" 
+            alt="Tela do aplicativo de coleta seletiva"
             className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
           />
             
