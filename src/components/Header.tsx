@@ -21,7 +21,7 @@ const Header = () => {
             <a href="#blog" className="hover:text-sky-400 transition-colors">Blog</a>
             <Link to="/projects" className="hover:text-sky-400 transition-colors">Projetos</Link>
             <a href="#eventos" className="hover:text-sky-400 transition-colors">Eventos</a>
-            <a href="#equipe" className="hover:text-sky-400 transition-colors">Equipe</a>
+            <Link to="/equipe" className="hover:text-sky-400 transition-colors">Equipe</Link>
             <ThemeToggle />
           </nav>
           

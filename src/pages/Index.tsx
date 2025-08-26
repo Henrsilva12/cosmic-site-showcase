@@ -5,7 +5,6 @@ import ProjectsSection from "@/components/ProjectsSection";
 import EventsSection from "@/components/EventsSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
-import Projects from "./Projects";
 
 const Index = () => {
   return (

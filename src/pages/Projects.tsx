@@ -55,7 +55,7 @@ const Projects = () => {
       <Header />
       <main className="flex-grow py-8 mt-32">
         <div className="container mx-auto px-4">
-          {/* Título com animação */}
+
           <h1 
             className="text-4xl font-bold text-center mb-6 text-foreground font-heading"
             data-aos="fade-down"
@@ -64,7 +64,7 @@ const Projects = () => {
           </h1>
 
           <p 
-            className="text-lg text-muted-foreground text-justify max-w-2xl max-w-full mx-auto mb-12"
+            className="text-lg text-foreground text-justify max-w-2xl max-w-full mx-auto mb-12"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -82,7 +82,7 @@ const Projects = () => {
                 key={project.id} 
                 className="overflow-hidden hover:shadow-xl transition-all duration-300 border border-border"
                 data-aos="fade-up"
-                data-aos-delay={index * 100} // Animação escalonada
+                data-aos-delay={index * 100}
               >
                 <div className="relative h-56 overflow-hidden">
                   <img 
