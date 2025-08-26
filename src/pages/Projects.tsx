@@ -53,7 +53,7 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
-      <main className="flex-grow py-8 mt-16">
+      <main className="flex-grow py-8 mt-32">
         <div className="container mx-auto px-4">
           {/* Título com animação */}
           <h1 

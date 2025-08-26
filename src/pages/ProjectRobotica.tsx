@@ -26,7 +26,7 @@ const ProjectRobotica = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
       
-      <main className="flex-grow py-8 mt-16">
+      <main className="flex-grow py-8 mt-32">
         <div className="container mx-auto px-4 max-w-4xl">
 
           <div className="mb-8">
