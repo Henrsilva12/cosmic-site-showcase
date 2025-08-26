@@ -11,6 +11,7 @@ import ProjectLoop from "./pages/ProjectLoop";
 import ProjectGameOn from "./pages/ProjectGameOn";
 import ProjectRobotica from "./pages/ProjectRobotica";
 import ProjectRecicla from "./pages/ProjectRecicla";
+import Equipe from "./pages/Equipe";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/project-game-on" element={<ProjectGameOn />} />
             <Route path="/project-robotica" element={<ProjectRobotica />} />
             <Route path="/project-recicla" element={<ProjectRecicla />} />
+            <Route path="/equipe" element={<Equipe />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
