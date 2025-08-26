@@ -26,7 +26,7 @@ const ProjectRecicla = () => {
           </div>
 
           <div className="prose max-w-none mb-8">
-            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+            <p className="text-lg leading-relaxed text-foreground mb-6">
               A consciência ambiental também tem espaço no IF Baiano – Campus Itapetinga. O projeto de Implantação da Coleta Seletiva foi um passo importante rumo a um campus mais sustentável e conectado com as necessidades do meio ambiente.
             </p>
 
@@ -36,11 +36,11 @@ const ProjectRecicla = () => {
             className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
           />
             
-            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+            <p className="text-lg leading-relaxed text-foreground mb-6">
               Durante o projeto, foi iniciado o desenvolvimento de um aplicativo voltado para a coleta seletiva, facilitando o descarte correto dos resíduos e incentivando a participação da comunidade acadêmica.
             </p>
-            
-            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+
+            <p className="text-lg leading-relaxed text-foreground mb-6">
               A proposta é unir tecnologia e responsabilidade ambiental, promovendo mudanças reais através de ações simples e eficazes.
             </p>
 

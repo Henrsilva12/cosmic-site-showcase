@@ -45,7 +45,7 @@ const ProjectRobotica = () => {
           </div>
 
           <div className="prose max-w-none mb-8">
-            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+            <p className="text-lg leading-relaxed text-foreground mb-6">
               A robótica entrou em cena de forma lúdica e educativa no projeto Introdução à Robótica e Automação com Arduino, realizado na Escola Noralice e posteriormente demonstrado na exposição 2023. A ação foi voltada para crianças, que puderam interagir com kits de Arduino e entender, na prática, como a automação está presente no nosso dia a dia.
             </p>
 
@@ -54,20 +54,20 @@ const ProjectRobotica = () => {
               alt="Projeto Robótica"
               className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
             />
-            
-            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+
+            <p className="text-lg leading-relaxed text-foreground mb-6">
               Embora nossa equipe tenha ficado mais na observação — assistindo os pequenos explorarem os circuitos com empolgação — o momento foi essencial para perceber como a tecnologia pode ser inserida desde cedo no ambiente escolar de maneira leve e divertida.
             </p>
 
-            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+            <p className="text-lg leading-relaxed text-foreground mb-6">
               As fotos desse dia mostram o brilho nos olhos das crianças ao se depararem com os sensores, LEDs e motores, provando que, com a abordagem certa, aprender pode ser tão empolgante quanto brincar.
             </p>
           </div>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center">Galeria do Projeto</h2>
+            <h2 className="text-2xl font-bold mb-4 text-center text-foreground">Galeria do Projeto</h2>
             
-            <div className="relative rounded-lg p-4">
+            <div className="relative bg-muted/30 rounded-lg p-4">
               <div className="flex justify-center items-center">
                 <img 
                   src={images[currentImage]} 
@@ -76,20 +76,22 @@ const ProjectRobotica = () => {
                 />
               </div>
 
+              {/* Botão anterior - ajustado para modo dark */}
               <button 
                 onClick={prevImage}
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full shadow-md transition-all border border-border"
                 aria-label="Imagem anterior"
               >
-                <ChevronLeft className="w-6 h-6" />
+                <ChevronLeft className="w-6 h-6 text-foreground" />
               </button>
 
+              {/* Botão próximo - ajustado para modo dark */}
               <button 
                 onClick={nextImage}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full shadow-md transition-all border border-border"
                 aria-label="Próxima imagem"
               >
-                <ChevronRight className="w-6 h-6" />
+                <ChevronRight className="w-6 h-6 text-foreground" />
               </button>
 
               <div className="flex justify-center mt-4 space-x-2">
@@ -100,7 +102,7 @@ const ProjectRobotica = () => {
                     className={`w-3 h-3 rounded-full transition-all ${
                       index === currentImage 
                         ? 'bg-primary scale-110' 
-                        : 'bg-gray-300 hover:bg-gray-400'
+                        : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
                     }`}
                     aria-label={`Ir para imagem ${index + 1}`}
                   />
@@ -114,7 +116,7 @@ const ProjectRobotica = () => {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">Contatos</h2>
+            <h2 className="text-2xl font-bold mb-4 text-foreground">Contatos</h2>
             <div className="space-y-3">
               <div className="flex items-center">
                 <Github className="w-5 h-5 mr-3 text-muted-foreground" />
@@ -122,7 +124,7 @@ const ProjectRobotica = () => {
                   href="https://github.com/loop-infinito" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary hover:underline"
+                  className="text-muted-foreground hover:text-primary hover:underline transition-colors"
                 >
                   GitHub do Projeto
                 </a>
