@@ -47,7 +47,7 @@ const Projects = () => {
             Projetos
           </h1>
           
-          <p className="text-lg text-muted-foreground text-justify max-w-full text-slate-950 max-w-2xl mb-12">
+          <p className="text-lg text-text-slate-950 text-justify max-w-full max-w-2xl mb-12">
            Nesta seção, você encontra uma coletânea dos projetos desenvolvidos ao longo do curso de Sistemas de Informação do IF Baiano – Campus Itapetinga. São iniciativas que unem teoria e prática, explorando áreas como tecnologia, inovação, redes, robótica, sustentabilidade, programação e muito mais. Clique em cada projeto para conhecer mais detalhes sobre as ideias, processos e resultados.
           </p>
           

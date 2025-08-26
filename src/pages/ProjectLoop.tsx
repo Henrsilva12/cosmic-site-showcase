@@ -26,7 +26,7 @@ const ProjectLoop = () => {
           </div>
 
           <div className="prose max-w-none mb-8">
-            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+            <p className="text-lg leading-relaxed text-foreground mb-6">
               O projeto "Loop Infinito: Grupo de Estudo em Algoritmo e Linguagem de Programação" tem como objetivo principal oferecer um espaço sistematizado de estudo, troca de conhecimentos e reforço dos conteúdos de algoritmos e programação para estudantes do curso de Bacharelado em Sistemas de Informação do IF Baiano – Campus Itapetinga.
             </p>
  
@@ -36,7 +36,7 @@ const ProjectLoop = () => {
             className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
           />
 
-            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+            <p className="text-lg leading-relaxed text-foreground mb-6">
               A proposta visa atender, prioritariamente, estudantes com dificuldades nestas disciplinas fundamentais, oferecendo suporte didático-pedagógico complementar, com enfoque na resolução de problemas, raciocínio lógico e desenvolvimento de pequenos projetos práticos. As atividades serão conduzidas por um docente coordenador e poderão contar com monitores voluntários, em encontros semanais, presenciais ou virtuais.
             </p>
 
@@ -46,7 +46,7 @@ const ProjectLoop = () => {
             className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
           />
             
-            <p className="text-lg leading-relaxed text-slate-950 mb-6">
+            <p className="text-lg leading-relaxed text-foreground mb-6">
               Ao final do semestre, os resultados esperados incluem a produção de relatórios de acompanhamento, avaliações diagnósticas e um compilado de exercícios resolvidos e discutidos no grupo.
             </p>
           </div>
