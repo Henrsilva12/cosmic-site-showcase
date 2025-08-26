@@ -11,45 +11,29 @@ import ProjectLoop from "./pages/ProjectLoop";
 import ProjectGameOn from "./pages/ProjectGameOn";
 import ProjectRobotica from "./pages/ProjectRobotica";
 import ProjectRecicla from "./pages/ProjectRecicla";
-import { useEffect } from "react"; // Importe o useEffect
 
 const queryClient = new QueryClient();
 
-const App = () => {
-  useEffect(() => {
-
-    import('aos').then((AOS) => {
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: false,
-        offset: 30,
-        disable: window.innerWidth < 768 
-      });
-    });
-  }, []);
-
-  return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/project-loop" element={<ProjectLoop />} />
-              <Route path="/project-game-on" element={<ProjectGameOn />} />
-              <Route path="/project-robotica" element={<ProjectRobotica />} />
-              <Route path="/project-recicla" element={<ProjectRecicla />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </TooltipProvider>
-      </ThemeProvider>
-    </QueryClientProvider>
-  );
-};
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/project-loop" element={<ProjectLoop />} />
+            <Route path="/project-game-on" element={<ProjectGameOn />} />
+            <Route path="/project-robotica" element={<ProjectRobotica />} />
+            <Route path="/project-recicla" element={<ProjectRecicla />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </ThemeProvider>
+  </QueryClientProvider>
+);
 
 export default App;
