@@ -6,10 +6,9 @@ const ProjectLoop = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
-      
+
       <main className="flex-grow py-8 mt-32">
         <div className="container mx-auto px-4 max-w-4xl">
-
           <div className="mb-8">
             <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-4">
               <div className="flex items-center">
@@ -21,33 +20,48 @@ const ProjectLoop = () => {
                 <span className="font-semibold">por Henrique Santos</span>
               </div>
             </div>
-            
-            <h1 className="text-4xl font-bold text-foreground mb-6">Loop Infinito</h1>
+
+            <h1 className="text-4xl font-bold text-foreground mb-6">
+              Loop Infinito
+            </h1>
           </div>
 
           <div className="prose max-w-none mb-8">
             <p className="text-lg leading-relaxed text-foreground mb-6">
-              O projeto "Loop Infinito: Grupo de Estudo em Algoritmo e Linguagem de Programação" tem como objetivo principal oferecer um espaço sistematizado de estudo, troca de conhecimentos e reforço dos conteúdos de algoritmos e programação para estudantes do curso de Bacharelado em Sistemas de Informação do IF Baiano – Campus Itapetinga.
-            </p>
- 
-          <img 
-            src="/src/assets/loop1.jpg" 
-            alt="Loop Infinito"
-            className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-          />
-
-            <p className="text-lg leading-relaxed text-foreground mb-6">
-              A proposta visa atender, prioritariamente, estudantes com dificuldades nestas disciplinas fundamentais, oferecendo suporte didático-pedagógico complementar, com enfoque na resolução de problemas, raciocínio lógico e desenvolvimento de pequenos projetos práticos. As atividades serão conduzidas por um docente coordenador e poderão contar com monitores voluntários, em encontros semanais, presenciais ou virtuais.
+              O projeto "Loop Infinito: Grupo de Estudo em Algoritmo e Linguagem
+              de Programação" tem como objetivo principal oferecer um espaço
+              sistematizado de estudo, troca de conhecimentos e reforço dos
+              conteúdos de algoritmos e programação para estudantes do curso de
+              Bacharelado em Sistemas de Informação do IF Baiano – Campus
+              Itapetinga.
             </p>
 
-            <img 
-            src="/src/assets/loop2.png" 
-            alt="Loop Infinito"
-            className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-          />
-            
+            <img
+              src="/src/assets/loop1.jpg"
+              alt="Loop Infinito"
+              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
+            />
+
             <p className="text-lg leading-relaxed text-foreground mb-6">
-              Ao final do semestre, os resultados esperados incluem a produção de relatórios de acompanhamento, avaliações diagnósticas e um compilado de exercícios resolvidos e discutidos no grupo.
+              A proposta visa atender, prioritariamente, estudantes com
+              dificuldades nestas disciplinas fundamentais, oferecendo suporte
+              didático-pedagógico complementar, com enfoque na resolução de
+              problemas, raciocínio lógico e desenvolvimento de pequenos
+              projetos práticos. As atividades serão conduzidas por um docente
+              coordenador e poderão contar com monitores voluntários, em
+              encontros semanais, presenciais ou virtuais.
+            </p>
+
+            <img
+              src="/src/assets/loop2.png"
+              alt="Loop Infinito"
+              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
+            />
+
+            <p className="text-lg leading-relaxed text-foreground mb-6">
+              Ao final do semestre, os resultados esperados incluem a produção
+              de relatórios de acompanhamento, avaliações diagnósticas e um
+              compilado de exercícios resolvidos e discutidos no grupo.
             </p>
           </div>
 
@@ -57,9 +71,9 @@ const ProjectLoop = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Github className="w-5 h-5 mr-3 text-muted-foreground" />
-                <a 
-                  href="https://github.com/loop-infinito" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/loop-infinito"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary hover:underline"
                 >
@@ -70,7 +84,7 @@ const ProjectLoop = () => {
           </div>
         </div>
       </main>
-        <Footer />
+      <Footer />
     </div>
   );
 };

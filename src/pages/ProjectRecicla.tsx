@@ -6,10 +6,9 @@ const ProjectRecicla = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
-      
+
       <main className="flex-grow py-8 mt-32">
         <div className="container mx-auto px-4 max-w-4xl">
-
           <div className="mb-8">
             <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-4">
               <div className="flex items-center">
@@ -21,35 +20,42 @@ const ProjectRecicla = () => {
                 <span className="font-semibold">por Henrique Santos</span>
               </div>
             </div>
-            
-            <h1 className="text-4xl font-bold text-foreground mb-6">Mãos que Reciclam</h1>
+
+            <h1 className="text-4xl font-bold text-foreground mb-6">
+              Mãos que Reciclam
+            </h1>
           </div>
 
           <div className="prose max-w-none mb-8">
             <p className="text-lg leading-relaxed text-foreground mb-6">
-              A consciência ambiental também tem espaço no IF Baiano – Campus Itapetinga. O projeto de Implantação da Coleta Seletiva foi um passo importante rumo a um campus mais sustentável e conectado com as necessidades do meio ambiente.
+              A consciência ambiental também tem espaço no IF Baiano – Campus
+              Itapetinga. O projeto de Implantação da Coleta Seletiva foi um
+              passo importante rumo a um campus mais sustentável e conectado com
+              as necessidades do meio ambiente.
             </p>
 
-          <img 
-            src="/src/assets/recicla1.png" 
-            alt="Loop Infinito"
-            className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-          />
-            
+            <img
+              src="/src/assets/recicla1.png"
+              alt="Loop Infinito"
+              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
+            />
+
             <p className="text-lg leading-relaxed text-foreground mb-6">
-              Durante o projeto, foi iniciado o desenvolvimento de um aplicativo voltado para a coleta seletiva, facilitando o descarte correto dos resíduos e incentivando a participação da comunidade acadêmica.
+              Durante o projeto, foi iniciado o desenvolvimento de um aplicativo
+              voltado para a coleta seletiva, facilitando o descarte correto dos
+              resíduos e incentivando a participação da comunidade acadêmica.
             </p>
 
             <p className="text-lg leading-relaxed text-foreground mb-6">
-              A proposta é unir tecnologia e responsabilidade ambiental, promovendo mudanças reais através de ações simples e eficazes.
+              A proposta é unir tecnologia e responsabilidade ambiental,
+              promovendo mudanças reais através de ações simples e eficazes.
             </p>
 
-            <img 
-            src="/src/assets/reciclaa.png" 
-            alt="Tela do aplicativo de coleta seletiva"
-            className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-          />
-            
+            <img
+              src="/src/assets/reciclaa.png"
+              alt="Tela do aplicativo de coleta seletiva"
+              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
+            />
           </div>
 
           {/* Seção de Contatos */}
@@ -58,9 +64,9 @@ const ProjectRecicla = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Github className="w-5 h-5 mr-3 text-muted-foreground" />
-                <a 
-                  href="https://github.com/BSI-IFBaiano" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/BSI-IFBaiano"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary hover:underline"
                 >
@@ -71,7 +77,7 @@ const ProjectRecicla = () => {
           </div>
         </div>
       </main>
-        <Footer />
+      <Footer />
     </div>
   );
 };

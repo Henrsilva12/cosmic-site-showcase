@@ -5,7 +5,7 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
-@import 'aos/dist/aos.css';
+@import "aos/dist/aos.css";
 
 @layer base {
   :root {
@@ -20,9 +20,17 @@ All colors MUST be HSL.
 
     --primary: 264 87% 9%;
     --primary-foreground: 210 40% 98%;
-    --primary-gradient: linear-gradient(135deg, hsl(264, 87%, 9%), hsl(264, 84%, 30%));
-    
-    --section-gradient: linear-gradient(135deg, hsl(264, 87%, 9%), hsl(264, 84%, 30%));
+    --primary-gradient: linear-gradient(
+      135deg,
+      hsl(264, 87%, 9%),
+      hsl(264, 84%, 30%)
+    );
+
+    --section-gradient: linear-gradient(
+      135deg,
+      hsl(264, 87%, 9%),
+      hsl(264, 84%, 30%)
+    );
     --link-accent: 24 95% 53%; /* #F6BE9A */
 
     --secondary: 210 40% 96.1%;
