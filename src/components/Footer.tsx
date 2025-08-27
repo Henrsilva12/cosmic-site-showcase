@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { useModal } from "@/components/ModalProvider";
 
 const Footer = () => {
+  const { openModal } = useModal();
+
   return (
     <footer className="bg-primary-gradient text-white py-16">
       <div className="container mx-auto px-4">
@@ -27,15 +30,20 @@ const Footer = () => {
           </div>
           
           <div>
-            <div className="space-y-4">
-
-              <button className="w-full bg-white text-gray-800 hover:bg-sky-200 hover:text-gray-900 transition-colors py-2 px-4 rounded-md font-medium">
+         <div className="space-y-4">
+              <Button
+                className="w-full bg-white text-gray-800 hover:bg-sky-200 hover:text-gray-900"
+                onClick={() => openModal("contato")}
+              >
                 Enviar mensagem
-              </button>
-              
-              <button className="w-full bg-red-600 text-white hover:bg-red-700 hover:text-white transition-colors py-2 px-4 rounded-md font-medium">
+              </Button>
+
+              <Button
+                className="w-full bg-white text-gray-800 hover:bg-sky-200 hover:text-gray-900"
+                onClick={() => openModal("relatarProblema")}
+              >
                 Relatar problemas
-              </button>
+              </Button>
             </div>
           </div>
         </div>
