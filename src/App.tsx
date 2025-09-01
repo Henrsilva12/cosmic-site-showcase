@@ -13,6 +13,10 @@ import ProjectLoop from "./pages/ProjectLoop";
 import ProjectGameOn from "./pages/ProjectGameOn";
 import ProjectRobotica from "./pages/ProjectRobotica";
 import ProjectRecicla from "./pages/ProjectRecicla";
+import Eventos from "./pages/Eventos";
+import Exposicao from "./pages/Exposicao";
+import CampusParty from "./pages/CampusParty";
+import Crimpagem from "./pages/Crimpagem";
 import Equipe from "./pages/Equipe";
 
 const queryClient = new QueryClient();
@@ -24,17 +28,21 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <ModalProvider>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/project-loop" element={<ProjectLoop />} />
-              <Route path="/project-game-on" element={<ProjectGameOn />} />
-              <Route path="/project-robotica" element={<ProjectRobotica />} />
-              <Route path="/project-recicla" element={<ProjectRecicla />} />
-              <Route path="/equipe" element={<Equipe />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+        <ModalProvider>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/project-loop" element={<ProjectLoop />} />
+            <Route path="/project-game-on" element={<ProjectGameOn />} />
+            <Route path="/project-robotica" element={<ProjectRobotica />} />
+            <Route path="/project-recicla" element={<ProjectRecicla />} />
+            <Route path="/equipe" element={<Equipe />} />
+            <Route path="/eventos" element={<Eventos />} />
+            <Route path="/eventos-exposicao" element={<Exposicao />} />
+            <Route path="/campus-party" element={<CampusParty />} />
+            <Route path="/oficina-crimpagem" element={<Crimpagem />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
           </ModalProvider>
         </BrowserRouter>
       </TooltipProvider>
