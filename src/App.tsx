@@ -4,6 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "next-themes";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ModalProvider } from "@/components/ModalProvider";
+
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Projects from "./pages/Projects";
@@ -26,6 +28,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+        <ModalProvider>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/projects" element={<Projects />} />
@@ -40,6 +43,7 @@ const App = () => (
             <Route path="/oficina-crimpagem" element={<Crimpagem />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </ModalProvider>
         </BrowserRouter>
       </TooltipProvider>
     </ThemeProvider>
