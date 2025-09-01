@@ -159,7 +159,7 @@ export default function Equipe() {
               >
                 <img
                   className="rounded-lg w-full md:w-80 h-64 object-cover mx-auto"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjL5_M4i774AJDF4afA6Be2n059wJIXDYOw&s"
+                  src="/src/assets/IMG_20250706_152318.jpg"
                   alt="Hércules Silva"
                 />
                 <div className="flex flex-col gap-4 text-base md:text-lg">
@@ -173,7 +173,8 @@ export default function Equipe() {
                     fortalece a base do projeto.
                   </p>
                   <h2 className="font-bold text-foreground">
-                    Interesses: Back-end e Arquitetura de Sistemas
+                    Interesses: Back-end, Arquitetura de Sistemas e Redes de
+                    Computadores.
                   </h2>
                   <div className="flex items-center gap-2">
                     <h1 className="font-bold text-foreground">GitHub:</h1>
@@ -186,8 +187,16 @@ export default function Equipe() {
                       thellllima02
                     </a>
                   </div>
-                  <div>
+                  <div className="flex items-center gap-2">
                     <h1 className="font-bold text-foreground">Contatos:</h1>
+                    <a
+                      href="https://www.linkedin.com/in/hercules-silva/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sky-500 hover:text-sky-600 transition-colors"
+                    >
+                      Hércules Silva
+                    </a>
                   </div>
                 </div>
               </div>
