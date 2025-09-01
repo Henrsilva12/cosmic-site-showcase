@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
+import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -23,7 +24,8 @@ const Eventos = () => {
       description:
         "O curso de BSI brilhou com projetos de robótica, automação e sustentabilidade, mostrando como a tecnologia pode ser acessível e transformadora.",
       image: "/src/assets/carrocel2.png",
-      link: "#",
+      link: "/eventos-exposicao",
+      slug: "eventos-exposicao",
     },
     {
       id: 2,
@@ -31,7 +33,7 @@ const Eventos = () => {
       description:
         "Alunos do IF Baiano viveram dias incríveis na Campus Party PE 2024, explorando IA, robótica, games e muito mais. Uma experiência única no maior festival de inovação do país!",
       image: "/src/assets/campus-party.png",
-      link: "#",
+      link: "/campus-party",
     },
     {
       id: 3,
@@ -39,7 +41,7 @@ const Eventos = () => {
       description:
         "Alunos do BSI dominam crimpagem de cabos em oficina prática de redes. Padrões, testes e muito aprendizado técnico!",
       image: "/src/assets/oficina-crimpagem.png",
-      link: "#",
+      link: "/oficina-crimpagem",
     },
   ];
 
@@ -95,12 +97,14 @@ const Eventos = () => {
                     {evento.description}
                   </p>
 
-                  <Button
-                    className="text-primary hover:underline p-0 h-auto font-normal"
-                    variant="link"
-                  >
-                    Leia mais...
-                  </Button>
+                  <Link to={evento.link} className="block w-full">
+                    <Button
+                      className="text-primary hover:underline p-0 h-auto font-normal"
+                      variant="link"
+                    >
+                      Leia mais...
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
