@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Globe, Users, Radio } from "lucide-react";
-import itCampusBg from "@/assets/it-campus-bg.jpg";
-import academicCenterBg from "@/assets/academic-center-bg.jpg";
-import radioBg from "@/assets/radio-bg.jpg";
+import itCampusBg from "@/assets/if.jpg";
+import academicCenterBg from "@/assets/CA.jpeg";
+import radioBg from "@/assets/diga+.jpeg";
 
 const AboutSection = () => {
   return (
