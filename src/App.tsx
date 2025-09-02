@@ -18,6 +18,7 @@ import Exposicao from "./pages/Exposicao";
 import CampusParty from "./pages/CampusParty";
 import Crimpagem from "./pages/Crimpagem";
 import Equipe from "./pages/Equipe";
+import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/eventos-exposicao" element={<Exposicao />} />
             <Route path="/campus-party" element={<CampusParty />} />
             <Route path="/oficina-crimpagem" element={<Crimpagem />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           </ModalProvider>
