@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ArrowRight, Calendar, User, ChevronLeft, ChevronRight } from "lucide-react";
+import { Calendar, User, ChevronLeft, ChevronRight } from "lucide-react";
 
 const ProjectExposicao = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -23,11 +23,10 @@ const ProjectExposicao = () => {
   const projectExposicao = [
     {
       id: 1,
-      title: "Robô X",
+      title: "Montador de Cubo Mágico",
       description:
-        "Esse robô, desenvolvido por Geovana e Lucas movimenta uma pinça para pegar e soltar objetos, operando com precisão",
+        "Esse robô, desenvolvido por Geovanna e Lucas movimenta uma pinça para pegar e soltar objetos, operando com precisão",
       image: "/src/assets/roboX.png",
-      link: "/project-expo",
     },
     {
       id: 2,
@@ -35,7 +34,6 @@ const ProjectExposicao = () => {
       description:
         "Esse robô simula os movimentos de um cachorro, podendo andar e reagir a comando simples. Esta projeto foi projetado por Vinicius e Pedro Lucas",
       image: "/src/assets/cachorro.png",
-      link: "/project-expo",
     },
     {
       id: 3,
@@ -43,7 +41,6 @@ const ProjectExposicao = () => {
       description:
         "Os discentes Sila e Emanuel desenvolveram um robô que emite sons com base na distância captada por um sensor, simulando diferentes sons musicais",
       image: "/src/assets/guitarra.png",
-      link: "/project-expo",
     },
     {
       id: 4,
@@ -51,15 +48,13 @@ const ProjectExposicao = () => {
       description:
         "Esse robô tem a capacidade de analisar e resolver um cubo mágico por meio de movimentos automaticos, esse prototipo foi desenvolvido por Gabriel '33', Gabriel '39' e Kauã",
       image: "/src/assets/removedor.png",
-      link: "/project-expo",
     },
     {
       id: 5,
       title: "Seguidor de Linha",
       description:
-        "A mesma equipe do 'Removedor de Cubo Mágico, foram além do que foi planejo e criaram um segundo robô, o mesmo, detecta e segue uma linha no chão usando sensores de luminosidade",
+        "A mesma equipe do 'Montador de Cubo Mágico, foram além do que foi planejo e criaram um segundo robô, o mesmo, detecta e segue uma linha no chão usando sensores de luminosidade",
       image: "/src/assets/seguidor.png",
-      link: "/project-expo",
     },
     {
       id: 6,
@@ -67,7 +62,6 @@ const ProjectExposicao = () => {
       description:
         "Robô desenvolvido por Cristian e Bruno simula o funcionamento de uma empilhadeira, levantando e transportando pequenos objetos. O projeto de o potência de criar um sistema automatizados, onde devidamente programado, é capaz de descarregar um caminhão e ja armazenar no seu devido local ",
       image: "/src/assets/empilhadeira.png",
-      link: "/project-expo",
     },
   ];
 
@@ -246,13 +240,6 @@ const ProjectExposicao = () => {
                   <p className="text-muted-foreground mb-6 leading-relaxed text-justify flex-grow">
                     {projeto.description}
                   </p>
-
-                 <Link to={projeto.link} className="block w-full">
-                    <Button variant="blue" className="w-full group">
-                        Ver Detalhes
-                      <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -278,8 +265,8 @@ const ProjectExposicao = () => {
             <Card className="overflow-hidden">
               <div className="relative h-96 overflow-hidden">
                 <img
-                  src="/src/assets/nerds.png"
-                  alt="Equipe de desenvolvimento dos projetos"
+                  src="/src/assets/casaAutonoma.png"
+                  alt="Casa autonoma"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -305,7 +292,7 @@ const ProjectExposicao = () => {
           <p className="text-lg text-foreground text-justify mb-12 leading-relaxed">
             A participação do BSI foi essencial, aproximando o instituto da
             comunidade. Hudson (coordenador) destacou a importância de mostrar o
-            trabalho do curso, enquanto alunos como Almerinda e Geovana
+            trabalho do curso, enquanto alunos como Almerinda e Geovanna
             reforçaram o valor de levar o conhecimento acadêmico para fora e
             impulsionar áreas como robótica. A professora Roberta ressaltou o
             desenvolvimento de habilidades profissionais. O evento comprovou

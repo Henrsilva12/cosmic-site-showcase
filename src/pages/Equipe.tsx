@@ -146,8 +146,16 @@ export default function Equipe() {
                       Henrsilva12
                     </a>
                   </div>
-                  <div>
+                  <div className="flex items-center gap-2">
                     <h1 className="font-bold text-foreground">Contatos:</h1>
+                    <a
+                      href="https://www.linkedin.com/in/henrique-santtos/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sky-500 hover:text-sky-600 transition-colors"
+                    >
+                      Henrique Santos
+                    </a>
                   </div>
                 </div>
               </div>
