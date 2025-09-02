@@ -72,9 +72,10 @@ const ProjectExposicao = () => {
   ];
 
   const carouselImages = [
-    "/src/assets/carrossel1.png",
-    "/src/assets/carrossel2.png",
-    "/src/assets/carrossel3.png",
+    "/src/assets/carrDog.png",
+    "/src/assets/casaAutonoma.png",
+    "/src/assets/brunoExpo.png",
+    "/src/assets/kauanExpo.png",
   ];
 
   const nextImage = () => {
@@ -124,7 +125,7 @@ const ProjectExposicao = () => {
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <Card className="overflow-hidden">
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-full overflow-hidden">
                   <img
                     src="/src/assets/expo1.png"
                     alt="Exposição Agropecuária - Estande 1"
@@ -133,7 +134,7 @@ const ProjectExposicao = () => {
                 </div>
               </Card>
               <Card className="overflow-hidden">
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-full overflow-hidden">
                   <img
                     src="/src/assets/expo2.png"
                     alt="Exposição Agropecuária - Estande 2"
@@ -154,10 +155,6 @@ const ProjectExposicao = () => {
           </div>
 
           <div className="mb-12" data-aos="fade-up">
-            <h2 className="text-2xl font-bold mb-6 text-center text-foreground">
-              Galeria do Evento
-            </h2>
-
             <div className="relative bg-muted/30 rounded-lg p-4">
               <div className="flex justify-center items-center">
                 <Card className="overflow-hidden max-w-4xl">

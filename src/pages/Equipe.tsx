@@ -119,7 +119,7 @@ export default function Equipe() {
               >
                 <img
                   className="rounded-lg w-full md:w-80 h-64 object-cover mx-auto"
-                  src="https://i.postimg.cc/qv3LnWRv/Whats-App-Image-2025-08-21-at-10-47-21.jpg"
+                  src="/src/assets/rick.png"
                   alt="Henrique Santos"
                 />
                 <div className="flex flex-col gap-4 text-base md:text-lg">
