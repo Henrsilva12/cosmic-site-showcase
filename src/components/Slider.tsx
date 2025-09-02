@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 import heroTeam from "@/assets/hero-team.jpg";
 import teamPhoto from "@/assets/team-photo.jpg";
-import projectsBg from "@/assets/projects-bg.jpg";
+import projectsBg from "@/assets/team-photo.jpg";
 
 const Slider = () => {
   const slides = [

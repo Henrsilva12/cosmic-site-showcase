@@ -24,7 +24,7 @@ const Eventos = () => {
       title: "Exposição",
       description:
         "O curso de BSI brilhou com projetos de robótica, automação e sustentabilidade, mostrando como a tecnologia pode ser acessível e transformadora.",
-      image: "/src/assets/robotica.png",
+      image: "/src/assets/exposicao2025.png",
       link: "/eventos-exposicao",
     },
     {

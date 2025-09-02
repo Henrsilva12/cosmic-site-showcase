@@ -23,14 +23,14 @@ const Blog = () => {
       id: 1,
       description:
         "Um grupo de estudos para alunos de Sistemas de Informação do IF Baiano, focado em reforçar lógica de programação e algoritmos através de aulas práticas, desafios e projetos.",
-      image: "/src/assets/img1.png",
+      image: "/src/assets/loop1.png",
       link: "/project-loop",
     },
     {
       id: 2,
       description:
         "Alunos do curso de Sistemas de Informação surpreenderam na Exposição Agropecuária de Itapetinga com robôs interativos, casas automatizadas e soluções criativas.",
-      image: "/src/assets/robotica.png",
+      image: "/src/assets/exposicao2025.png",
       link: "/eventos-exposicao",
     },
     {

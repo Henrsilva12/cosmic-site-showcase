@@ -38,7 +38,7 @@ export default function Equipe() {
               >
                 <img
                   className="rounded-lg w-full md:w-80 h-64 object-cover mx-auto"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjL5_M4i774AJDF4afA6Be2n059wJIXDYOw&s"
+                  src="/src/assets/tavares.png"
                   alt="Amanda Tavares"
                 />
                 <div className="flex flex-col gap-4 text-base md:text-lg">
@@ -159,7 +159,7 @@ export default function Equipe() {
               >
                 <img
                   className="rounded-lg w-full md:w-80 h-64 object-cover mx-auto"
-                  src="/src/assets/IMG_20250706_152318.jpg"
+                  src="/src/assets/hercules.png"
                   alt="Hércules Silva"
                 />
                 <div className="flex flex-col gap-4 text-base md:text-lg">

@@ -15,8 +15,8 @@ import ProjectRobotica from "./pages/ProjectRobotica";
 import ProjectRecicla from "./pages/ProjectRecicla";
 import Eventos from "./pages/Eventos";
 import Exposicao from "./pages/ProjectExposicao";
-import CampusParty from "./pages/CampusParty";
-import Crimpagem from "./pages/Crimpagem";
+import CampusParty from "./pages/EventCampusParty";
+import Crimpagem from "./pages/EventCrimpagem";
 import Equipe from "./pages/Equipe";
 import Blog from "./pages/Blog";
 

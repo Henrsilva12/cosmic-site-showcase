@@ -25,7 +25,7 @@ const CampusParty = () => {
       <Header />
       <main className="flex-grow py-8 mt-32">
         <div className="container mx-auto px-4 ">
-          {/* Título Principal */}
+
           <h1
             className="text-4xl font-bold text-center mb-8 text-foreground font-heading"
             data-aos="fade-down"
@@ -33,8 +33,7 @@ const CampusParty = () => {
             Campus Party
           </h1>
 
-          {/* Primeira Seção */}
-
+-
           <div className="mb-12" data-aos="fade-up">
             <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
               Entre os dias de evento da Campus Party 2024 em Pernambuco, um
@@ -47,8 +46,7 @@ const CampusParty = () => {
             <div className="flex justify-center mb-12">
               <Card className="overflow-hidden max-w-4xl">
                 {" "}
-                {/* Você pode ajustar o max-w- aqui */}
-                <div className="relative h-full overflow-hidden">
+-                <div className="relative h-full overflow-hidden">
                   <img
                     src="/src/assets/campus-party.png"
                     alt="Exposição Agropecuária - Estande 1"
@@ -98,7 +96,7 @@ const CampusParty = () => {
           <div className="flex justify-center mb-12">
             <Card className="overflow-hidden max-w-4xl">
               {" "}
-              {/* Você pode ajustar o max-w- aqui */}
+
               <div className="relative h-full overflow-hidden">
                 <img
                   src="/src/assets/IMG-20240905-WA0084.jpg"

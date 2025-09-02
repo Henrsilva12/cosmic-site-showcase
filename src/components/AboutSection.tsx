@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Globe, Users, Radio } from "lucide-react";
-import ifbaiano from "@/assets/if.jpg";
-import centroAcad from "@/assets/CA.jpeg";
-import radio from "@/assets/diga+.jpeg";
+import ifbaiano from "@/assets/logoIf.png";
+import centroAcad from "@/assets/logoCA.png";
+import radio from "@/assets/logoDiga+.png";
 
 const AboutSection = () => {
   return (

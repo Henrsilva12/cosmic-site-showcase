@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
-import projectLoop from "@/assets/loop1.jpg";
+import projectLoop from "@/assets/loop1.png";
 import projectGameOn from "@/assets/gameon2.png";
 import projectExpo from "@/assets/roboX.png";
 import { Link } from "react-router-dom";

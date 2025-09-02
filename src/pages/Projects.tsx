@@ -24,7 +24,7 @@ const Projects = () => {
       title: "Loop Infinito",
       description:
         "Um grupo de estudos para alunos de Sistemas de Informação do IF Baiano, focado em reforçar lógica de programação e algoritmos através de aulas práticas, desafios e projetos. Ideal para quem quer superar dificuldades e evoluir na carreira tech!",
-      image: "/src/assets/loop1.jpg",
+      image: "/src/assets/loop1.png",
       link: "/project-loop",
       slug: "loop-infinito",
     },

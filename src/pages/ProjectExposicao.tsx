@@ -3,16 +3,14 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { ArrowRight, Calendar, User, ChevronLeft, ChevronRight } from "lucide-react";
 
 const ProjectExposicao = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -74,10 +72,18 @@ const ProjectExposicao = () => {
   ];
 
   const carouselImages = [
-    "/src/assets/carrocel.png",
-    "/src/assets/carrocel2.png",
-    "/src/assets/carrocel3.png",
+    "/src/assets/carrossel1.png",
+    "/src/assets/carrossel2.png",
+    "/src/assets/carrossel3.png",
   ];
+
+  const nextImage = () => {
+    setCurrentImage((prev) => (prev + 1) % carouselImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImage((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+  };
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
@@ -93,9 +99,21 @@ const ProjectExposicao = () => {
           </h1>
 
           <div className="mb-12" data-aos="fade-up">
+
+            <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-6">
+              <div className="flex items-center">
+                <Calendar className="w-4 h-4 mr-2" />
+                <span className="font-semibold">Publicada em 29/08/2025</span>
+              </div>
+              <div className="flex items-center">
+                <User className="w-4 h-4 mr-2" />
+                <span className="font-semibold">por Hércules Silva</span>
+              </div>
+            </div>
+
             <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
               Durante a tradicional{" "}
-              <b>Exposição Agropecuária de Itapetinga - Bahia</b>, o curso de
+              Exposição Agropecuária de Itapetinga - Bahia, o curso de
               Bacharelado em Sistemas de Informação (BSI) do IF Baiano se
               destacou com uma série de projetos criativos que levaram
               tecnologia e interatividade ao público. Alunos de diferentes
@@ -136,30 +154,56 @@ const ProjectExposicao = () => {
           </div>
 
           <div className="mb-12" data-aos="fade-up">
-            <Swiper
-              pagination={{
-                dynamicBullets: true,
-              }}
-              navigation={true}
-              modules={[Pagination, Navigation, Autoplay]}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              className="mySwiper rounded-lg shadow-lg"
-            >
-              {carouselImages.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <div className="flex justify-center items-center h-96 bg-gray-100">
-                    <img
-                      src={image}
-                      alt={`Slide ${index + 1} da Exposição Agropecuária`}
-                      className="max-w-full max-h-full object-contain p-4"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <h2 className="text-2xl font-bold mb-6 text-center text-foreground">
+              Galeria do Evento
+            </h2>
+
+            <div className="relative bg-muted/30 rounded-lg p-4">
+              <div className="flex justify-center items-center">
+                <Card className="overflow-hidden max-w-4xl">
+                  <img
+                    src={carouselImages[currentImage]}
+                    alt={`Galeria Exposição ${currentImage + 1}`}
+                    className="w-full h-64 md:h-96 object-cover"
+                  />
+                </Card>
+              </div>
+
+              <button
+                onClick={prevImage}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full shadow-md transition-all border border-border"
+                aria-label="Imagem anterior"
+              >
+                <ChevronLeft className="w-6 h-6 text-foreground" />
+              </button>
+
+              <button
+                onClick={nextImage}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full shadow-md transition-all border border-border"
+                aria-label="Próxima imagem"
+              >
+                <ChevronRight className="w-6 h-6 text-foreground" />
+              </button>
+
+              <div className="flex justify-center mt-4 space-x-2">
+                {carouselImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImage(index)}
+                    className={`w-3 h-3 rounded-full transition-all ${
+                      index === currentImage
+                        ? "bg-primary scale-110"
+                        : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                    }`}
+                    aria-label={`Ir para imagem ${index + 1}`}
+                  />
+                ))}
+              </div>
+
+              <div className="text-center mt-2 text-sm text-muted-foreground">
+                {currentImage + 1} / {carouselImages.length}
+              </div>
+            </div>
           </div>
 
           <h1
@@ -206,12 +250,10 @@ const ProjectExposicao = () => {
                     {projeto.description}
                   </p>
 
-                  <Link to={projeto.link} className="block w-full mt-auto">
-                    <Button
-                      className="text-primary hover:underline p-0 h-auto font-normal"
-                      variant="link"
-                    >
-                      Ver detalhes →
+                 <Link to={projeto.link} className="block w-full">
+                    <Button variant="blue" className="w-full group">
+                        Ver Detalhes
+                      <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>
                 </CardContent>
