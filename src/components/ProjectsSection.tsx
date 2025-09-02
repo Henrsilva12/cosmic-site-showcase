@@ -1,8 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
-import projectMedium from "@/assets/project-medium.jpg";
-import projectSmall1 from "@/assets/project-small-1.jpg";
-import projectSmall2 from "@/assets/project-small-2.jpg";
+import projectLoop from "@/assets/loop1.jpg";
+import projectGameOn from "@/assets/gameon2.png";
+import projectExpo from "@/assets/roboX.png";
 import { Link } from "react-router-dom";
 
 const ProjectsSection = () => {
@@ -62,38 +62,44 @@ const ProjectsSection = () => {
                   data-aos="zoom-in"
                   data-aos-delay="500"
                 >
-                  <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
-                    <img
-                      src={projectMedium}
-                      alt="Projeto principal de desenvolvimento"
-                      className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
-                    />
-                  </Card>
+                  <Link to="/project-loop">
+                    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
+                      <img
+                        src={projectLoop}
+                        alt="Projeto Loop Infinito"
+                        className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+                      />
+                    </Card>
+                  </Link>
                 </div>
 
-                <Card
-                  className="overflow-hidden hover:shadow-xl transition-all duration-300"
-                  data-aos="fade-up"
-                  data-aos-delay="600"
-                >
-                  <img
-                    src={projectSmall1}
-                    alt="Projeto de aplicativo móvel"
-                    className="w-full h-32 object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                </Card>
+                <Link to="/project-game-on">
+                  <Card
+                    className="overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
+                    <img
+                      src={projectGameOn}
+                      alt="Projeto do GameOn"
+                      className="w-full h-32 object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                  </Card>
+                </Link>
 
-                <Card
-                  className="overflow-hidden hover:shadow-xl transition-all duration-300"
-                  data-aos="fade-up"
-                  data-aos-delay="700"
-                >
-                  <img
-                    src={projectSmall2}
-                    alt="Projeto de desenvolvimento web"
-                    className="w-full h-32 object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                </Card>
+                <Link to="/eventos-exposicao">
+                  <Card
+                    className="overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
+                    data-aos="fade-up"
+                    data-aos-delay="700"
+                  >
+                    <img
+                      src={projectExpo}
+                      alt="Projeto de Robótica na Exposição"
+                      className="w-full h-32 object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                  </Card>
+                </Link>
               </div>
             </div>
           </CardContent>

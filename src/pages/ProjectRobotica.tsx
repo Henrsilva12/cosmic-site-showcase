@@ -96,7 +96,7 @@ const ProjectRobotica = () => {
                 />
               </div>
 
-              {/* Botão anterior - ajustado para modo dark */}
+
               <button
                 onClick={prevImage}
                 className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full shadow-md transition-all border border-border"
@@ -105,7 +105,6 @@ const ProjectRobotica = () => {
                 <ChevronLeft className="w-6 h-6 text-foreground" />
               </button>
 
-              {/* Botão próximo - ajustado para modo dark */}
               <button
                 onClick={nextImage}
                 className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full shadow-md transition-all border border-border"

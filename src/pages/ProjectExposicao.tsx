@@ -10,9 +10,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
-const Exposicao = () => {
+const ProjectExposicao = () => {
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -22,14 +22,14 @@ const Exposicao = () => {
     });
   }, []);
 
-  const projetos = [
+  const projectExposicao = [
     {
       id: 1,
       title: "Robô X",
       description:
         "Esse robô, desenvolvido por Geovana e Lucas movimenta uma pinça para pegar e soltar objetos, operando com precisão",
       image: "/src/assets/roboX.png",
-      link: "/eventos-exposicao",
+      link: "/project-expo",
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const Exposicao = () => {
       description:
         "Esse robô simula os movimentos de um cachorro, podendo andar e reagir a comando simples. Esta projeto foi projetado por Vinicius e Pedro Lucas",
       image: "/src/assets/cachorro.png",
-      link: "/campus-party",
+      link: "/project-expo",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const Exposicao = () => {
       description:
         "Os discentes Sila e Emanuel desenvolveram um robô que emite sons com base na distância captada por um sensor, simulando diferentes sons musicais",
       image: "/src/assets/guitarra.png",
-      link: "/oficina-crimpagem",
+      link: "/project-expo",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const Exposicao = () => {
       description:
         "Esse robô tem a capacidade de analisar e resolver um cubo mágico por meio de movimentos automaticos, esse prototipo foi desenvolvido por Gabriel '33', Gabriel '39' e Kauã",
       image: "/src/assets/removedor.png",
-      link: "/oficina-crimpagem",
+      link: "/project-expo",
     },
     {
       id: 5,
@@ -61,7 +61,7 @@ const Exposicao = () => {
       description:
         "A mesma equipe do 'Removedor de Cubo Mágico, foram além do que foi planejo e criaram um segundo robô, o mesmo, detecta e segue uma linha no chão usando sensores de luminosidade",
       image: "/src/assets/seguidor.png",
-      link: "/oficina-crimpagem",
+      link: "/project-expo",
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ const Exposicao = () => {
       description:
         "Robô desenvolvido por Cristian e Bruno simula o funcionamento de uma empilhadeira, levantando e transportando pequenos objetos. O projeto de o potência de criar um sistema automatizados, onde devidamente programado, é capaz de descarregar um caminhão e ja armazenar no seu devido local ",
       image: "/src/assets/empilhadeira.png",
-      link: "/oficina-crimpagem",
+      link: "/project-expo",
     },
   ];
 
@@ -84,15 +84,13 @@ const Exposicao = () => {
       <Header />
       <main className="flex-grow py-8 mt-32">
         <div className="container mx-auto px-4 ">
-          {/* Título Principal */}
+
           <h1
             className="text-4xl font-bold text-center mb-8 text-foreground font-heading"
             data-aos="fade-down"
           >
             Exposição Agropecuária
           </h1>
-
-          {/* Primeira Seção */}
 
           <div className="mb-12" data-aos="fade-up">
             <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
@@ -108,7 +106,7 @@ const Exposicao = () => {
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <Card className="overflow-hidden">
-                <div className="relative h-full overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src="/src/assets/expo1.png"
                     alt="Exposição Agropecuária - Estande 1"
@@ -117,7 +115,7 @@ const Exposicao = () => {
                 </div>
               </Card>
               <Card className="overflow-hidden">
-                <div className="relative h-full overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src="/src/assets/expo2.png"
                     alt="Exposição Agropecuária - Estande 2"
@@ -135,26 +133,33 @@ const Exposicao = () => {
               entre a academia e a comunidade, demonstrando o impacto positivo
               que a educação tecnológica pode ter no desenvolvimento local.
             </p>
-            <div className="mb-12" data-aos="fade-up">
-              <Swiper
-                pagination={{
-                  dynamicBullets: true,
-                }}
-                navigation={true}
-                modules={[Pagination, Navigation]}
-                className="mySwiper rounded-lg shadow-lg"
-              >
-                {carouselImages.map((image, index) => (
-                  <SwiperSlide key={index}>
+          </div>
+
+          <div className="mb-12" data-aos="fade-up">
+            <Swiper
+              pagination={{
+                dynamicBullets: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation, Autoplay]}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              className="mySwiper rounded-lg shadow-lg"
+            >
+              {carouselImages.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex justify-center items-center h-96 bg-gray-100">
                     <img
                       src={image}
-                      alt={`Slide ${index + 1}`}
-                      className="w-full h-96 object-contain p-4"
+                      alt={`Slide ${index + 1} da Exposição Agropecuária`}
+                      className="max-w-full max-h-full object-contain p-4"
                     />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
 
           <h1
@@ -177,12 +182,12 @@ const Exposicao = () => {
             adaptaram ou criaram suas próprias programações, explorando a lógica
             por trás de cada função. Os robôs apresentados foram:
           </p>
-          {/* Grid de projetos */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 mb-12 gap-8">
-            {projetos.map((projeto, index) => (
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {projectExposicao.map((projeto, index) => (
               <Card
                 key={projeto.id}
-                className="overflow-hidden hover:shadow-xl transition-all duration-300 border border-border"
+                className="overflow-hidden hover:shadow-xl transition-all duration-300 border border-border flex flex-col h-full"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
@@ -193,29 +198,30 @@ const Exposicao = () => {
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-3 text-foreground line-clamp-1">
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-bold mb-3 text-foreground">
                     {projeto.title}
                   </h3>
-                  <p className="text-muted-foreground mb-6 line-clamp-4 leading-relaxed text-justify">
+                  <p className="text-muted-foreground mb-6 leading-relaxed text-justify flex-grow">
                     {projeto.description}
                   </p>
 
-                  <Link to={projeto.link} className="block w-full">
+                  <Link to={projeto.link} className="block w-full mt-auto">
                     <Button
                       className="text-primary hover:underline p-0 h-auto font-normal"
                       variant="link"
                     >
-                      GitHub:
+                      Ver detalhes →
                     </Button>
                   </Link>
                 </CardContent>
               </Card>
             ))}
           </div>
+          
           <p className="text-lg text-foreground text-justify mb-12 leading-relaxed">
             Além dos projetos de robótica, alunos do 2º semestre do curso de BSI
-            do IF Baiano apresentaram soluções criativas e acessíveis,
+            do IF Baiano apresentaram soluções creativas e acessíveis,
             utilizando a plataforma Arduino para resolver problemas do cotidiano
             — com foco na inclusão, sustentabilidade e automação.
           </p>
@@ -225,7 +231,7 @@ const Exposicao = () => {
               <div className="relative h-96 overflow-hidden">
                 <img
                   src="/src/assets/casinhaRosa.png"
-                  alt="Exposição Agropecuária - Estande 1"
+                  alt="Casa automatizada para pessoas com deficiência"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -234,12 +240,13 @@ const Exposicao = () => {
               <div className="relative h-96 overflow-hidden">
                 <img
                   src="/src/assets/nerds.png"
-                  alt="Exposição Agropecuária - Estande 2"
+                  alt="Equipe de desenvolvimento dos projetos"
                   className="w-full h-full object-cover"
                 />
               </div>
             </Card>
           </div>
+          
           <p className="text-lg text-foreground text-justify mb-12 leading-relaxed">
             Entre os destaques esteve uma casa automatizada voltada para pessoas
             com deficiência física, com funcionalidades como acendimento de
@@ -272,4 +279,4 @@ const Exposicao = () => {
   );
 };
 
-export default Exposicao;
+export default ProjectExposicao;

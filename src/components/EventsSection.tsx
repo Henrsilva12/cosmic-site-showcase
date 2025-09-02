@@ -1,8 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
-import event1 from "@/assets/event-1.jpg";
-import event2 from "@/assets/event-2.jpg";
-import event3 from "@/assets/event-3.jpg";
+import eventParty from "@/assets/campus-party.png";
+import eventCripagem from "@/assets/oficina-crimpagem.png";
+import eventExpo from "@/assets/expo2.png";
 import { Link } from "react-router-dom";
 
 const EventsSection = () => {
@@ -55,42 +55,50 @@ const EventsSection = () => {
               </div>
 
               <div className="grid grid-cols-1 gap-4">
-                <Card
-                  className="overflow-hidden hover:shadow-xl transition-all duration-300"
-                  data-aos="fade-left"
-                  data-aos-delay="500"
-                >
-                  <img
-                    src={event1}
-                    alt="Conferência de Tecnologia"
-                    className="w-full h-32 object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                </Card>
 
-                <Card
-                  className="overflow-hidden hover:shadow-xl transition-all duration-300"
-                  data-aos="fade-left"
-                  data-aos-delay="600"
-                >
+                <Link to="/eventos-campus-party">
+                  <Card
+                    className="overflow-hidden hover:shadow-xl transition-all duration-300"
+                    data-aos="fade-left"
+                    data-aos-delay="500"
+                  >
+                    <img
+                      src={eventParty}
+                      alt="Conferência de Tecnologia"
+                      className="w-full h-32 object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                  </Card>
+                </Link>
+
+                <Link to="/eventos-oficina-crimpagem">
+                  <Card
+                    className="overflow-hidden hover:shadow-xl transition-all duration-300"
+                    data-aos="fade-left"
+                    data-aos-delay="600"
+                  >
                   <img
-                    src={event2}
+                    src={eventCripagem}
                     alt="Workshop de Desenvolvimento"
                     className="w-full h-32 object-cover transition-transform duration-300 hover:scale-105"
                   />
-                </Card>
+                  </Card>
+                </Link>
 
-                <Card
-                  className="overflow-hidden hover:shadow-xl transition-all duration-300"
-                  data-aos="fade-left"
-                  data-aos-delay="700"
-                >
+                <Link to="/eventos-exposicao">
+                  <Card
+                    className="overflow-hidden hover:shadow-xl transition-all duration-300"
+                    data-aos="fade-left"
+                    data-aos-delay="700"
+                  >
                   <img
-                    src={event3}
+                    src={eventExpo}
                     alt="Hackathon Universitário"
                     className="w-full h-32 object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </Card>
+              </Link>
               </div>
+
             </div>
           </CardContent>
         </Card>
