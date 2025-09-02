@@ -54,7 +54,7 @@ const ProjectLoop = () => {
               <Card className="overflow-hidden max-w-4xl">
                 <div className="relative h-64 md:h-96 overflow-hidden">
                   <img
-                    src="/src/assets/loop1.jpg"
+                    src="/src/assets/loop1.png"
                     alt="Loop Infinito"
                     className="w-full h-full object-cover"
                   />

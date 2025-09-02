@@ -1,14 +1,12 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
 
 const CampusParty = () => {
   useEffect(() => {
@@ -45,11 +43,10 @@ const CampusParty = () => {
 
             <div className="flex justify-center mb-12">
               <Card className="overflow-hidden max-w-4xl">
-                {" "}
 -                <div className="relative h-full overflow-hidden">
                   <img
                     src="/src/assets/campus-party.png"
-                    alt="Exposição Agropecuária - Estande 1"
+                    alt="Viagem do Campus Party"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -70,7 +67,7 @@ const CampusParty = () => {
                 <div className="relative h-96 overflow-hidden">
                   <img
                     src="/src/assets/campus-party-nordeste-5-1.jpeg"
-                    alt="Exposição Agropecuária - Estande 1"
+                    alt="Evento do Campus Party"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -78,8 +75,8 @@ const CampusParty = () => {
               <Card className="overflow-hidden">
                 <div className="relative h-96 overflow-hidden">
                   <img
-                    src="/src/assets/IMG_20240905_015952.jpg"
-                    alt="Exposição Agropecuária - Estande 2"
+                    src="/src/assets/tendasParty.jpg"
+                    alt="Evento do Campus Party"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -99,8 +96,8 @@ const CampusParty = () => {
 
               <div className="relative h-full overflow-hidden">
                 <img
-                  src="/src/assets/IMG-20240905-WA0084.jpg"
-                  alt="Exposição Agropecuária - Estande 1"
+                  src="/src/assets/campusParty2.jpg"
+                  alt="Evento do Campus Party"
                   className="w-full h-full object-cover"
                 />
               </div>
