@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ArrowRight } from "lucide-react";
 
 const Eventos = () => {
   useEffect(() => {
@@ -23,9 +24,8 @@ const Eventos = () => {
       title: "Exposição",
       description:
         "O curso de BSI brilhou com projetos de robótica, automação e sustentabilidade, mostrando como a tecnologia pode ser acessível e transformadora.",
-      image: "/src/assets/carrocel2.png",
+      image: "/src/assets/robotica.png",
       link: "/eventos-exposicao",
-      slug: "eventos-exposicao",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const Eventos = () => {
       description:
         "Alunos do IF Baiano viveram dias incríveis na Campus Party PE 2024, explorando IA, robótica, games e muito mais. Uma experiência única no maior festival de inovação do país!",
       image: "/src/assets/campus-party.png",
-      link: "/campus-party",
+      link: "/eventos-campus-party",
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const Eventos = () => {
       description:
         "Alunos do BSI dominam crimpagem de cabos em oficina prática de redes. Padrões, testes e muito aprendizado técnico!",
       image: "/src/assets/oficina-crimpagem.png",
-      link: "/oficina-crimpagem",
+      link: "/eventos-oficina-crimpagem",
     },
   ];
 
@@ -50,7 +50,7 @@ const Eventos = () => {
       <Header />
       <main className="flex-grow py-8 mt-32">
         <div className="container mx-auto px-4">
-          {/* Título Principal */}
+
           <h1
             className="text-4xl font-bold text-center mb-6 text-foreground font-heading"
             data-aos="fade-down"
@@ -58,7 +58,6 @@ const Eventos = () => {
             Eventos
           </h1>
 
-          {/* Descrição */}
           <p
             className="text-lg text-foreground text-justify max-w-2xl max-w-full mx-auto mb-12"
             data-aos="fade-up"
@@ -73,12 +72,11 @@ const Eventos = () => {
             experiências, fotos e depoimentos.
           </p>
 
-          {/* Grid de Eventos */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {eventos.map((evento, index) => (
               <Card
                 key={evento.id}
-                className="overflow-hidden hover:shadow-xl transition-all duration-300 border border-border"
+                className="overflow-hidden hover:shadow-xl transition-all duration-300 border border-border flex flex-col h-full"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
@@ -89,20 +87,18 @@ const Eventos = () => {
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-3 text-foreground line-clamp-1">
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-bold mb-3 text-foreground">
                     {evento.title}
                   </h3>
-                  <p className="text-muted-foreground mb-6 line-clamp-4 leading-relaxed text-justify">
+                  <p className="text-muted-foreground mb-6 leading-relaxed text-justify flex-grow">
                     {evento.description}
                   </p>
 
-                  <Link to={evento.link} className="block w-full">
-                    <Button
-                      className="text-primary hover:underline p-0 h-auto font-normal"
-                      variant="link"
-                    >
-                      Leia mais...
+                  <Link to={evento.link} className="block w-full mt-auto">
+                    <Button variant="blue" className="w-full group">
+                        Ver Detalhes
+                      <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>
                 </CardContent>

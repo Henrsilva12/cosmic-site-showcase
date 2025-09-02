@@ -1,16 +1,36 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { Calendar, User, Github, Mail } from "lucide-react";
+import { Calendar, User, Github } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProjectLoop = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: false,
+      offset: 100,
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
-
       <main className="flex-grow py-8 mt-32">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="mb-8">
-            <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-4">
+        <div className="container mx-auto px-4">
+
+          <h1
+            className="text-4xl font-bold text-center mb-8 text-foreground font-heading"
+            data-aos="fade-down"
+          >
+            Loop Infinito
+          </h1>
+
+          <div className="mb-12" data-aos="fade-up">
+            <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-6">
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
                 <span className="font-semibold">Publicada em 24/08/2025</span>
@@ -21,13 +41,7 @@ const ProjectLoop = () => {
               </div>
             </div>
 
-            <h1 className="text-4xl font-bold text-foreground mb-6">
-              Loop Infinito
-            </h1>
-          </div>
-
-          <div className="prose max-w-none mb-8">
-            <p className="text-lg leading-relaxed text-foreground mb-6">
+            <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
               O projeto "Loop Infinito: Grupo de Estudo em Algoritmo e Linguagem
               de Programação" tem como objetivo principal oferecer um espaço
               sistematizado de estudo, troca de conhecimentos e reforço dos
@@ -36,13 +50,19 @@ const ProjectLoop = () => {
               Itapetinga.
             </p>
 
-            <img
-              src="/src/assets/loop1.jpg"
-              alt="Loop Infinito"
-              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-            />
+            <div className="flex justify-center mb-6">
+              <Card className="overflow-hidden max-w-4xl">
+                <div className="relative h-64 md:h-96 overflow-hidden">
+                  <img
+                    src="/src/assets/loop1.jpg"
+                    alt="Loop Infinito"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </Card>
+            </div>
 
-            <p className="text-lg leading-relaxed text-foreground mb-6">
+            <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
               A proposta visa atender, prioritariamente, estudantes com
               dificuldades nestas disciplinas fundamentais, oferecendo suporte
               didático-pedagógico complementar, com enfoque na resolução de
@@ -52,35 +72,23 @@ const ProjectLoop = () => {
               encontros semanais, presenciais ou virtuais.
             </p>
 
-            <img
-              src="/src/assets/loop2.png"
-              alt="Loop Infinito"
-              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
-            />
+            <div className="flex justify-center mb-6">
+              <Card className="overflow-hidden max-w-4xl">
+                <div className="relative h-64 md:h-96 overflow-hidden">
+                  <img
+                    src="/src/assets/loop2.png"
+                    alt="Loop Infinito"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </Card>
+            </div>
 
-            <p className="text-lg leading-relaxed text-foreground mb-6">
+            <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
               Ao final do semestre, os resultados esperados incluem a produção
               de relatórios de acompanhamento, avaliações diagnósticas e um
               compilado de exercícios resolvidos e discutidos no grupo.
             </p>
-          </div>
-
-          {/* Seção de Contatos */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">Contatos</h2>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <Github className="w-5 h-5 mr-3 text-muted-foreground" />
-                <a
-                  href="https://github.com/loop-infinito"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary hover:underline"
-                >
-                  GitHub do Projeto
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </main>

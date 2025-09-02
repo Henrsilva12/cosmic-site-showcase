@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Globe, Users, Radio } from "lucide-react";
-import itCampusBg from "@/assets/if.jpg";
-import academicCenterBg from "@/assets/CA.jpeg";
-import radioBg from "@/assets/diga+.jpeg";
+import ifbaiano from "@/assets/if.jpg";
+import centroAcad from "@/assets/CA.jpeg";
+import radio from "@/assets/diga+.jpeg";
 
 const AboutSection = () => {
   return (
@@ -49,7 +49,7 @@ const AboutSection = () => {
                 <div
                   className="h-48 bg-cover bg-center relative"
                   style={{
-                    backgroundImage: `url(${itCampusBg})`,
+                    backgroundImage: `url(${ifbaiano})`,
                   }}
                 >
                   <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
@@ -83,7 +83,7 @@ const AboutSection = () => {
                 <div
                   className="h-48 bg-cover bg-center relative"
                   style={{
-                    backgroundImage: `url(${academicCenterBg})`,
+                    backgroundImage: `url(${centroAcad})`,
                   }}
                 >
                   <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
@@ -117,7 +117,7 @@ const AboutSection = () => {
                 <div
                   className="h-48 bg-cover bg-center relative"
                   style={{
-                    backgroundImage: `url(${radioBg})`,
+                    backgroundImage: `url(${radio})`,
                   }}
                 >
                   <div className="absolute inset-0 bg-black/70 flex items-center justify-center">

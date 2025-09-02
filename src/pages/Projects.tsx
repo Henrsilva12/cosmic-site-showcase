@@ -103,8 +103,8 @@ const Projects = () => {
                   </p>
 
                   <Link to={project.link} className="block w-full">
-                    <Button className="w-full group">
-                      Ver Detalhes
+                    <Button variant="blue" className="w-full group">
+                        Ver Detalhes
                       <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>

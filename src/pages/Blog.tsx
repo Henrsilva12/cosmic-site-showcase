@@ -59,7 +59,7 @@ const Blog = () => {
       description:
         "Alunos do IF Baiano viveram dias incríveis na Campus Party PE 2024, explorando IA, robótica, games e muito mais. Uma experiência única no maior festival de inovação.",
       image: "/src/assets/campus-party.png",
-      link: "/campus-party",
+      link: "/eventos-campus-party",
     },
   ];
 
@@ -98,8 +98,8 @@ const Blog = () => {
                   </p>
 
                   <Link to={blog.link} className="block w-full">
-                    <Button className="w-full group">
-                      Ver Detalhes
+                    <Button variant="blue" className="w-full group">
+                        Ver Detalhes
                       <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>
