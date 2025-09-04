@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ModalProvider } from "@/components/ModalProvider";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -42,23 +43,25 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-        <ModalProvider>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/project-loop" element={<ProjectLoop />} />
-            <Route path="/project-game-on" element={<ProjectGameOn />} />
-            <Route path="/project-robotica" element={<ProjectRobotica />} />
-            <Route path="/project-recicla" element={<ProjectRecicla />} />
-            <Route path="/equipe" element={<Equipe />} />
-            <Route path="/eventos" element={<Eventos />} />
-            <Route path="/eventos-exposicao" element={<Exposicao />} />
-            <Route path="/eventos-campus-party" element={<CampusParty />} />
-            <Route path="/eventos-oficina-crimpagem" element={<Crimpagem />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          </ModalProvider>
+          <SidebarProvider>
+            <ModalProvider>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/project-loop" element={<ProjectLoop />} />
+                <Route path="/project-game-on" element={<ProjectGameOn />} />
+                <Route path="/project-robotica" element={<ProjectRobotica />} />
+                <Route path="/project-recicla" element={<ProjectRecicla />} />
+                <Route path="/equipe" element={<Equipe />} />
+                <Route path="/eventos" element={<Eventos />} />
+                <Route path="/eventos-exposicao" element={<Exposicao />} />
+                <Route path="/eventos-campus-party" element={<CampusParty />} />
+                <Route path="/eventos-oficina-crimpagem" element={<Crimpagem />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </ModalProvider>
+          </SidebarProvider>
         </BrowserRouter>
       </TooltipProvider>
     </ThemeProvider>
