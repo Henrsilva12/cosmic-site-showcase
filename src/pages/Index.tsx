@@ -5,23 +5,19 @@ import ProjectsSection from "@/components/ProjectsSection";
 import EventsSection from "@/components/EventsSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
-import { AppSidebar } from "@/components/AppSidebar";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex w-full">
-      <AppSidebar />
-      <div className="flex-1">
-        <Header />
-        <main>
-          <HeroSection />
-          <AboutSection />
-          <ProjectsSection />
-          <EventsSection />
-          <TeamSection />
-        </main>
-        <Footer />
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <EventsSection />
+        <TeamSection />
+      </main>
+      <Footer />
     </div>
   );
 };
