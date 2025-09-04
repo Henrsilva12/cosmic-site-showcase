@@ -19,15 +19,15 @@ const Slider = () => {
     },
     {
       image: slider2,
-      alt: "imagem aleatória 1"
+      alt: "imagem aleatói"
     },
     {
       image: slider3,
-      alt: "imagem aleatória 2"
+      alt: "Projetos de desenvolvimento"
     },
     {
       image: slider4,
-      alt: "imagem aleatória 3"
+      alt: "Família IF Baiano 2"
     }
   ];
 
