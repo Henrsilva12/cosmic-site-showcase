@@ -6,23 +6,28 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import heroTeam from "@/assets/hero-team.jpg";
-import teamPhoto from "@/assets/team-photo.jpg";
-import projectsBg from "@/assets/team-photo.jpg";
+import famif from "@/assets/Famif.png";
+import slider2 from "@/assets/Slider 2.png";
+import slider3 from "@/assets/Slider 3.png";
+import slider4 from "@/assets/Slider 4.png";
 
 const Slider = () => {
   const slides = [
     {
-      image: heroTeam,
-      alt: "Equipe de desenvolvedores trabalhando juntos"
+      image: famif,
+      alt: "Famif"
     },
     {
-      image: teamPhoto,
-      alt: "Equipe Portal da ESI"
+      image: slider2,
+      alt: "imagem aleatória 1"
     },
     {
-      image: projectsBg,
-      alt: "Projetos de desenvolvimento"
+      image: slider3,
+      alt: "imagem aleatória 2"
+    },
+    {
+      image: slider4,
+      alt: "imagem aleatória 3"
     }
   ];
 
