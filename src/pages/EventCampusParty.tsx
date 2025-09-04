@@ -1,37 +1,23 @@
 import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const CampusParty = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: false,
-      offset: 100,
-    });
-  }, []);
-
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
       <main className="flex-grow py-8 mt-32">
         <div className="container mx-auto px-4 ">
-
           <h1
             className="text-4xl font-bold text-center mb-8 text-foreground font-heading"
             data-aos="fade-down"
           >
             Campus Party
           </h1>
-
--
           <div className="mb-12" data-aos="fade-up">
             <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
               Entre os dias de evento da Campus Party 2024 em Pernambuco, um
@@ -43,7 +29,7 @@ const CampusParty = () => {
 
             <div className="flex justify-center mb-12">
               <Card className="overflow-hidden max-w-4xl">
--                <div className="relative h-full overflow-hidden">
+               <div className="relative h-full overflow-hidden">
                   <img
                     src="/src/assets/campus-party.png"
                     alt="Viagem do Campus Party"
