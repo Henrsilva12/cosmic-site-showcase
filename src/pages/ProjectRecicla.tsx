@@ -2,20 +2,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Calendar, User, Github } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const ProjectRecicla = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: false,
-      offset: 100,
-    });
-  }, []);
-
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />

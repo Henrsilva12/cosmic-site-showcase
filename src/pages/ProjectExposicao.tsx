@@ -1,23 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { useEffect, useState } from "react";
-import AOS from "aos";
+import { useState } from "react";
 import "aos/dist/aos.css";
 import { Calendar, User, ChevronLeft, ChevronRight } from "lucide-react";
 
 const ProjectExposicao = () => {
   const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: false,
-      offset: 100,
-    });
-  }, []);
-
   const projectExposicao = [
     {
       id: 1,
@@ -80,13 +69,15 @@ const ProjectExposicao = () => {
           <h1
             className="text-4xl font-bold text-center mb-8 text-foreground font-heading"
             data-aos="fade-down"
+            data-aos-delay="100"
           >
             Exposição Agropecuária
           </h1>
 
-          <div className="mb-12" data-aos="fade-up">
+          <div className="mb-12" data-aos="fade-up" data-aos-delay="200">
 
-            <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-6">
+            <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-6"
+            data-aos="fade-right" data-aos-delay="300">
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
                 <span className="font-semibold">Publicada em 29/08/2025</span>
@@ -97,9 +88,8 @@ const ProjectExposicao = () => {
               </div>
             </div>
 
-            <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
-              Durante a tradicional{" "}
-              Exposição Agropecuária de Itapetinga - Bahia, o curso de
+            <p className="text-lg text-foreground text-justify mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="400">
+              Durante a tradicional Exposição Agropecuária de Itapetinga - Bahia, o curso de
               Bacharelado em Sistemas de Informação (BSI) do IF Baiano se
               destacou com uma série de projetos criativos que levaram
               tecnologia e interatividade ao público. Alunos de diferentes
@@ -108,8 +98,8 @@ const ProjectExposicao = () => {
               transformar o aprendizado em soluções práticas para o dia a dia.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-8 mb-12" data-aos="zoom-in" data-aos-delay="500">
+              <Card className="overflow-hidden" data-aos="flip-left" data-aos-delay="600">
                 <div className="relative h-full overflow-hidden">
                   <img
                     src="/src/assets/expo1.png"
@@ -118,7 +108,7 @@ const ProjectExposicao = () => {
                   />
                 </div>
               </Card>
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden" data-aos="flip-right" data-aos-delay="700">
                 <div className="relative h-full overflow-hidden">
                   <img
                     src="/src/assets/expo2.png"
@@ -129,7 +119,7 @@ const ProjectExposicao = () => {
               </Card>
             </div>
 
-            <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
+            <p className="text-lg text-foreground text-justify mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="800">
               A participação foi marcada por interações enriquecedoras e pela
               oportunidade específica de mostrar como a tecnologia pode ser
               aplicada em diferentes contextos, desde a agricultura até a gestão
@@ -139,10 +129,10 @@ const ProjectExposicao = () => {
             </p>
           </div>
 
-          <div className="mb-12" data-aos="fade-up">
+          <div className="mb-12" data-aos="fade-up" data-aos-delay="900">
             <div className="relative bg-muted/30 rounded-lg p-4">
               <div className="flex justify-center items-center">
-                <Card className="overflow-hidden max-w-4xl">
+                <Card className="overflow-hidden max-w-4xl" data-aos="zoom-in" data-aos-delay="1000">
                   <img
                     src={carouselImages[currentImage]}
                     alt={`Galeria Exposição ${currentImage + 1}`}
@@ -155,6 +145,7 @@ const ProjectExposicao = () => {
                 onClick={prevImage}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full shadow-md transition-all border border-border"
                 aria-label="Imagem anterior"
+                data-aos="fade-right" data-aos-delay="1100"
               >
                 <ChevronLeft className="w-6 h-6 text-foreground" />
               </button>
@@ -163,11 +154,12 @@ const ProjectExposicao = () => {
                 onClick={nextImage}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full shadow-md transition-all border border-border"
                 aria-label="Próxima imagem"
+                data-aos="fade-left" data-aos-delay="1100"
               >
                 <ChevronRight className="w-6 h-6 text-foreground" />
               </button>
 
-              <div className="flex justify-center mt-4 space-x-2">
+              <div className="flex justify-center mt-4 space-x-2" data-aos="fade-up" data-aos-delay="1200">
                 {carouselImages.map((_, index) => (
                   <button
                     key={index}
@@ -182,7 +174,7 @@ const ProjectExposicao = () => {
                 ))}
               </div>
 
-              <div className="text-center mt-2 text-sm text-muted-foreground">
+              <div className="text-center mt-2 text-sm text-muted-foreground" data-aos="fade-up" data-aos-delay="1300">
                 {currentImage + 1} / {carouselImages.length}
               </div>
             </div>
@@ -191,17 +183,19 @@ const ProjectExposicao = () => {
           <h1
             className="text-4xl font-bold text-center mb-8 text-foreground font-heading"
             data-aos="fade-down"
+            data-aos-delay="1400"
           >
             Da sala de aula para a prática
           </h1>
-          <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
+
+          <p className="text-lg text-foreground text-justify mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="1500">
             Nas aulas de robótica, os estudantes se organizaram para encarar um
             desafio prático: montar e programar robôs utilizando as plataformas
             BricxCC e LDD. A atividade começou com a construção de robôs
             seguidores de linha, uma introdução essencial para compreender
             componentes físicos, sensores e lógica de programação.
           </p>
-          <p className="text-lg text-foreground text-justify mb-6 leading-relaxed">
+          <p className="text-lg text-foreground text-justify mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="1600">
             Com a aproximação da exposição escolar, os grupos desenvolveram
             novos projetos para apresentar ao público. Alguns modelos possuíam
             instruções prontas, mas os alunos foram além: estudaram cada peça e
@@ -215,7 +209,7 @@ const ProjectExposicao = () => {
                 key={projeto.id}
                 className="overflow-hidden hover:shadow-xl transition-all duration-300 border border-border flex flex-col h-full"
                 data-aos="fade-up"
-                data-aos-delay={index * 100}
+                data-aos-delay={1700 + (index * 100)}
               >
                 <div className="relative h-56 overflow-hidden">
                   <img
@@ -236,15 +230,15 @@ const ProjectExposicao = () => {
             ))}
           </div>
           
-          <p className="text-lg text-foreground text-justify mb-12 leading-relaxed">
+          <p className="text-lg text-foreground text-justify mb-12 leading-relaxed" data-aos="fade-up" data-aos-delay="2300">
             Além dos projetos de robótica, alunos do 2º semestre do curso de BSI
             do IF Baiano apresentaram soluções creativas e acessíveis,
             utilizando a plataforma Arduino para resolver problemas do cotidiano
             — com foco na inclusão, sustentabilidade e automação.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="overflow-hidden">
+          <div className="grid md:grid-cols-2 gap-8 mb-12" data-aos="zoom-in" data-aos-delay="2400">
+            <Card className="overflow-hidden" data-aos="flip-left" data-aos-delay="2500">
               <div className="relative h-96 overflow-hidden">
                 <img
                   src="/src/assets/casinhaRosa.png"
@@ -253,7 +247,7 @@ const ProjectExposicao = () => {
                 />
               </div>
             </Card>
-            <Card className="overflow-hidden">
+            <Card className="overflow-hidden" data-aos="flip-right" data-aos-delay="2600">
               <div className="relative h-96 overflow-hidden">
                 <img
                   src="/src/assets/casaAutonoma.png"
@@ -264,7 +258,7 @@ const ProjectExposicao = () => {
             </Card>
           </div>
           
-          <p className="text-lg text-foreground text-justify mb-12 leading-relaxed">
+          <p className="text-lg text-foreground text-justify mb-12 leading-relaxed" data-aos="fade-up" data-aos-delay="2700">
             Entre os destaques esteve uma casa automatizada voltada para pessoas
             com deficiência física, com funcionalidades como acendimento de
             luzes por sensor de proximidade e uma fechadura eletrônica com
@@ -275,19 +269,19 @@ const ProjectExposicao = () => {
 
           <h1
             className="text-4xl font-bold text-center mb-12 text-foreground font-heading"
-            data-aos="fade-down"
+            data-aos="fade-up" data-aos-delay="2800"
           >
             Experiências do público
           </h1>
 
-          <p className="text-lg text-foreground text-justify mb-12 leading-relaxed">
+          <p className="text-lg text-foreground text-justify mb-12 leading-relaxed" data-aos="fade-up" data-aos-delay="2900">
             A participação do BSI foi essencial, aproximando o instituto da
             comunidade. Hudson (coordenador) destacou a importância de mostrar o
             trabalho do curso, enquanto alunos como Almerinda e Geovanna
             reforçaram o valor de levar o conhecimento acadêmico para fora e
             impulsionar áreas como robótica. A professora Roberta ressaltou o
             desenvolvimento de habilidades profissionais. O evento comprovou
-            como tecnologia, inovação e educação pública transformam vidas. 
+            como tecnologia, inovação e educação pública transformam vidas.
           </p>
         </div>
       </main>

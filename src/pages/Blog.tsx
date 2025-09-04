@@ -3,21 +3,10 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import { ArrowRight } from "lucide-react";
 
 const Blog = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: false,
-      offset: 100,
-    });
-  }, []);
-
   const blog = [
     {
       id: 1,
@@ -94,6 +83,7 @@ const Blog = () => {
                   <img
                     src={blog.image}
                     alt={blog.title}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>

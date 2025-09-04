@@ -1,9 +1,8 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Calendar, User, Github, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Card } from "@/components/ui/card";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const ProjectRobotica = () => {
@@ -16,15 +15,6 @@ const ProjectRobotica = () => {
     "/src/assets/car4.png",
     "/src/assets/car5.png",
   ];
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: false,
-      offset: 100,
-    });
-  }, []);
 
   const nextImage = () => {
     setCurrentImage((prev) => (prev + 1) % images.length);

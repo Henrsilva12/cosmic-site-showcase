@@ -5,6 +5,9 @@ import { ThemeProvider } from "next-themes";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ModalProvider } from "@/components/ModalProvider";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -22,7 +25,17 @@ import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+      offset: 100,
+    });
+  }, []);
+
+  return (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
       <TooltipProvider>
@@ -51,5 +64,6 @@ const App = () => (
     </ThemeProvider>
   </QueryClientProvider>
 );
+};
 
 export default App;

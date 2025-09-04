@@ -118,12 +118,25 @@ All colors MUST be HSL.
 }
 
 main {
-  padding-top: 7rem; /* Ajuste conforme a altura do seu header */
+  padding-top: 7rem;
 }
 
-/* Ou para telas menores */
+
 @media (max-width: 768px) {
   main {
     padding-top: 6rem;
+  }
+}
+
+[data-aos] {
+  transition-duration: 800ms;
+  transition-timing-function: ease-in-out;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    transition: none !important;
+    transform: none !important;
   }
 }

@@ -4,19 +4,9 @@ import Header from "@/components/Header";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Projects = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: false,
-      offset: 100,
-    });
-  }, []);
 
   const projects = [
     {
@@ -51,6 +41,14 @@ const Projects = () => {
         "Crianças da Escola Noralice descobriram o mundo da automação com Arduino em um projeto cheio de LEDs, sensores e muita diversão. Aprender tecnologia nunca foi tão empolgante!",
       image: "/src/assets/robotica1.png",
       link: "/project-robotica",
+    },
+    {
+      id: 5,
+      title: "Exposição Agropecuária",
+      description:
+        "Alunos do curso de Sistemas de Informação surpreenderam na Exposição Agropecuária de Itapetinga com robôs interativos, casas automatizadas e soluções criativas.",
+      image: "/src/assets/exposicao2025.png",
+      link: "/eventos-exposicao",
     },
   ];
 
