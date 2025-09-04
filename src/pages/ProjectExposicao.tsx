@@ -1,7 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import AOS from "aos";
@@ -23,41 +21,34 @@ const ProjectExposicao = () => {
   const projectExposicao = [
     {
       id: 1,
-      title: "Montador de Cubo Mágico",
-      description:
-        "Esse robô, desenvolvido por Geovanna e Lucas movimenta uma pinça para pegar e soltar objetos, operando com precisão",
-      image: "/src/assets/roboX.png",
-    },
-    {
-      id: 2,
       title: "Cachorro Robô",
       description:
         "Esse robô simula os movimentos de um cachorro, podendo andar e reagir a comando simples. Esta projeto foi projetado por Vinicius e Pedro Lucas",
       image: "/src/assets/cachorro.png",
     },
     {
-      id: 3,
+      id: 2,
       title: "Guitarra Mecânica",
       description:
         "Os discentes Sila e Emanuel desenvolveram um robô que emite sons com base na distância captada por um sensor, simulando diferentes sons musicais",
       image: "/src/assets/guitarra.png",
     },
     {
-      id: 4,
-      title: "Removedor de Cubo Mágico",
+      id: 3,
+      title: "Montador de Cubo Mágico",
       description:
         "Esse robô tem a capacidade de analisar e resolver um cubo mágico por meio de movimentos automaticos, esse prototipo foi desenvolvido por Gabriel '33', Gabriel '39' e Kauã",
       image: "/src/assets/removedor.png",
     },
     {
-      id: 5,
+      id: 4,
       title: "Seguidor de Linha",
       description:
         "A mesma equipe do 'Montador de Cubo Mágico, foram além do que foi planejo e criaram um segundo robô, o mesmo, detecta e segue uma linha no chão usando sensores de luminosidade",
       image: "/src/assets/seguidor.png",
     },
     {
-      id: 6,
+      id: 5,
       title: "Mini-Empilhadeira",
       description:
         "Robô desenvolvido por Cristian e Bruno simula o funcionamento de uma empilhadeira, levantando e transportando pequenos objetos. O projeto de o potência de criar um sistema automatizados, onde devidamente programado, é capaz de descarregar um caminhão e ja armazenar no seu devido local ",

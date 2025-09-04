@@ -66,8 +66,16 @@ export default function Equipe() {
                       amandatsantos
                     </a>
                   </div>
-                  <div>
+                  <div className="flex items-center gap-2">
                     <h1 className="font-bold text-foreground">Contatos:</h1>
+                    <a
+                      href="https://www.linkedin.com/in/amanda-tavares-santos-ats?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sky-500 hover:text-sky-600 transition-colors"
+                    >
+                      Amanda Tavares
+                    </a>
                   </div>
                 </div>
               </div>
@@ -79,7 +87,7 @@ export default function Equipe() {
               >
                 <img
                   className="rounded-lg w-full md:w-80 h-64 object-cover mx-auto"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjL5_M4i774AJDF4afA6Be2n059wJIXDYOw&s"
+                  src="/src/assets/Bruno.png"
                   alt="Bruno Flores"
                 />
                 <div className="flex flex-col gap-4 text-base md:text-lg">
@@ -106,8 +114,16 @@ export default function Equipe() {
                       Buurunu
                     </a>
                   </div>
-                  <div>
+                  <div className="flex items-center gap-2">
                     <h1 className="font-bold text-foreground">Contatos:</h1>
+                    <a
+                      href="https://www.linkedin.com/in/bruno-flores-31b021264/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sky-500 hover:text-sky-600 transition-colors"
+                    >
+                      Bruno Flores
+                    </a>
                   </div>
                 </div>
               </div>
@@ -243,8 +259,16 @@ export default function Equipe() {
                       natanael-sg
                     </a>
                   </div>
-                  <div>
+                  <div className="flex items-center gap-2">
                     <h1 className="font-bold text-foreground">Contatos:</h1>
+                    <a
+                      href="https://br.linkedin.com/in/natanael-dos-santos-gon%C3%A7alves-617011283"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sky-500 hover:text-sky-600 transition-colors"
+                    >
+                      Natanael Gonçalves
+                    </a>
                   </div>
                 </div>
               </div>
