@@ -87,7 +87,7 @@ export default function Equipe() {
               >
                 <img
                   className="rounded-lg w-full md:w-80 h-64 object-cover mx-auto"
-                  src="/src/assets/Bruno.png"
+                  src="/src/assets/Bruno.jpeg"
                   alt="Bruno Flores"
                 />
                 <div className="flex flex-col gap-4 text-base md:text-lg">
